@@ -4,108 +4,227 @@
 
 
 
-\usepackage{amssymb}
+\usepackage{amssymb,hyperref,booktabs,multirow}
+% \usepackage{graphicx}%插入图片
 
+% \usepackage{amssymb}%数学符号
 
-\journal{Nuclear Physics B}
+% \usepackage{amsthm}%数学定理
+
+% \usepackage{amsmath}%数学公式、矩阵、积分求和等
+
+% \usepackage{lineno}%显示行号
+
+% \usepackage{txfonts}%默认字体times new roman
+
+% \usepackage{enumitem}%项目编号
+
+% \usepackage{multirow}%多行合并
+
+% \usepackage{caption}%改变图表标题
+
+% \usepackage{array}%调用公式宏包的命令应放在调用宏包命令之前，也能控制表格
+
+% \usepackage{booktabs}%调整表格线与上下内容的间隔
+
+% \usepackage{longtable}%调用跨页表格
+
+% \usepackage{bm}%数学字体加粗
+
+% \usepackage{setspace}%调整一段文字的行间距
+
+% \usepackage{natbib}%参考文献管理包​
+% \biboptions{sort&compress}%参考文献可以压缩显示比例​
+
+% \allowdisplaybreaks[4]%允许公式跨页
+
+% \captionsetup[figure]{font=small,labelfont=bf,labelsep=period}%修改标题文字格式
+
+% \renewcommand{\figurename}{Fig.}%修改标题样式
+
+% \newcommand{\tabincell}[2]{}%让表格内容自动换行，但仍然需要用到换行\\
+
+\journal{Energy Conversation and Management}
 
 \begin{document}
 
 
 \begin{frontmatter}
 
-%% Title, authors and addresses
 
-%% use the tnoteref command within \title for footnotes;
-%% use the tnotetext command for theassociated footnote;
-%% use the fnref command within \author or \address for footnotes;
-%% use the fntext command for theassociated footnote;
-%% use the corref command within \author for corresponding author footnotes;
-%% use the cortext command for theassociated footnote;
-%% use the ead command for the email address,
-%% and the form \ead[url] for the home page:
-%% \title{Title\tnoteref{label1}}
-%% \tnotetext[label1]{}
-%% \author{Name\corref{cor1}\fnref{label2}}
-%% \ead{email address}
-%% \ead[url]{home page}
-%% \fntext[label2]{}
-%% \cortext[cor1]{}
-%% \address{Address\fnref{label3}}
-%% \fntext[label3]{}
 
-\title{A novel 1000MW double reheat ultra supercritical system with turbine–extraction-heated air preheaters and low temperature economizers}
+\title{A novel 1000\,\,MW double-reheat ultra supercritical system with turbine-extraction-heated air preheaters and low temperature economizers}
 
-%% use optional labels to link authors explicitly to addresses:
-%% \author[label1,label2]{}
-%% \address[label1]{}
-%% \address[label2]{}
 
-\author[rvt]{Lei Zhang}
+\author[hust,ncst]{Lei Zhang}
 \ead{zhanglei@ncst.edu.cn}	
-\author[focal]{Tao Yang\corref{cor1}}
-\ead{taoyang@hust.edu.cn}	
+\author[hust]{Tao Yang\corref{cor1}}
+\ead{hust\_yt@hust.edu.cn}	
 
-\address[rvt]{River Valley Technologies, SJP Building,Cotton Hills, Trivandrum, Kerala, India 695014}
-\address[focal]{River Valley Technologies, 9, Browns Court,Kennford, Exeter, United Kingdom}
+\address[hust]{School of Energy and Power Engineering, Huazhong University of Science and Technology, Wuhan 430074,China}
+\address[ncst]{College of Metallurgy and Energy, NorthChina University of Scienceand and Technology, Tangshan 063009,China}
 \cortext[cor1]{Corresponding authors}
 
 \begin{abstract}
-%% Text of abstract
-Herein, an optimization system of a 1000\,MW double-reheat ultra-supercritical (USC) unit with turbine–extraction-heated air preheaters (EAPHs), which use turbine extractions as heat sources of air preheaters while economizer outlet flue gas’ heat absorbed by low-pressure economizers (LPEs), is designed based on a 1000-MW double-reheat USC unit (reference system). The energetic performance analyses of the USC system with EAPH and reference system are used to compare their major parameters. In addition, thermodynamic analyses under partial load operation conditions are presented . The results show that the proposed system reduced the exergy loss in the air-heating and flue gas-cooling processes. Furthermore, the optimization system increases the temperature of secondary air and reduces the overall superheat degree of several extractions. Theoretically, the proposed system reduces the standard coal equivalent (SCE) consumption by nearly 5.5\,g/kWh under THA load when the temperature of the flue gas entering the electrostatic precipitator is set to 95$^\circ$C. Moreover, the proposed system can still reduce SCE consumption by 2.9\,g/kWh under the condition of 50\% THA load. Our findings indicate that system with APOB could improves the performance of the unit and may provide a theoretical basis for the optimization of double-reheat USC units.
+Herein, an novel system of a 1000\,\,MW double-reheat ultra-supercritical (USC) unit with turbine-extraction-heated air preheaters (EAPHs), which use turbine extractions as heat sources of air preheaters while economizer outlet flue gas’ heat absorbed by low pressure economizers (LPEs), is designed based on reference system of a 1000\,\,MW double-reheat USC unit. 
+The energetic performance analyses of the novel system and reference system are used to compare their major parameters. 
+In addition, thermodynamic analyses under partial load operation conditions are presented. 
+The results show that the proposed novel system reduced the exergy loss in the air-heating processes. Furthermore, the novel system increases the temperature of secondary air and reduces the overall superheat degree of several extractions.
+ Theoretically, the novel system reduces the SCE consumption by nearly 5.5\,g/kWh under THA load when the temperature of the flue gas entering the electrostatic precipitator is set to 95$^\circ$C.
+ Moreover, the novel system can still has advantages in coal saving under partial load condition.
+ Our findings indicate that system with EAPH could improves the performance of the unit and may provide a theoretical basis for the novel of double-reheat USC units.
 \end{abstract}
 
 \begin{keyword}
-%% keywords here, in the form: keyword \sep keyword
-
-%% PACS codes here, in the form: \PACS code \sep code
-
-%% MSC codes here, in the form: \MSC code \sep code
-%% or \MSC[2008] code \sep code (2000 is the default)
-Double reheat \sep Ultra-supercritical power plant \sep Exergy analysis \sep System Optimization \sep Thermodynamic analyses
+Double reheat \sep Ultra-supercritical power plant \sep Exergy analysis \sep System novel \sep Thermodynamic analyses
 \end{keyword}
 
 \end{frontmatter}
 
-%% \linenumbers
 
-%% main text
-\section{section1}
-dsadsadsadadsas\cite{Brooks1983CHARMM}
-\label{}
 
-%% The Appendices part is started with the command \appendix;
-%% appendix sections are then done as normal sections
-%% \appendix
 
-%% \section{}
-%% \label{}
+\section{Introduction}
+\label{sec:1}
+Coal is still the main fossil fuel resources for electricity production in the world according to~\cite{Ouedraogo2013Energy}. 
+In China, coal –fired power generation accounts for more than 70\% of the total electricity generation and subsequently contribute almost 50\%, 37\%, 33\% and 55\% to the SO$_X$, NO$_X$, dust and CO$_X$ emission volumes respectively~\cite{Zhang2010Analysis}.
+Statics show that China has been the largest producer and consumer of energy all over the world since 2013 [??]. 
+For 2016 as a whole, Chinese coal production fell by 7.9\% and the price of steam coal increased by over 60\%[??]. 
+Improve system efficiency and reducing coal consumption is still the main task of power plant design. Nowadays, ultra-supercritical (USC) power plants with large capacity and high parameter are considered to be feasible means to save energy and have rapidly developed word-wide.
+The double reheat USC unit is a new generation of USC unit which can improve the thermal performance compared with single reheat units~\cite{Zhao2017Exergy}. 
+According to Ref.~\cite{Yaxiu2013Thermal}, a double reheat unit with the inlet parameter 30.0\,MPa/600/620/620$^\circ$C improves the heat efficiency by 2.4\%-2.6\%, compared with a common used USC unit with the inlet parameter 25.0\,MPa/600/600$^\circ$C.
+ The U.S. built the first double reheat unit with main parameter 34.4 MPa/649/566/566$^\circ$C in 1960s.
+ Two 700 MW double reheat USC units in Japan were put into operation in 1990. 
+ The Taizhou power plant in China began to build double reheat USC units in 2012, and put it into operation in 2015.
+ Over the past few decades, the double reheat USC units have received more and more attention for its rapid development all over the world. Zhao Z et al.~\cite{Zhao2017Exergy} studied the exergy distribution system for a 1000\,MW double reheat USC power plant and provided the main reasons that led to exergy loss on the steam turbine.
+ Rashidi et al.~\cite{Rashidi2014Thermodynamic} investigated the thermodynamic analysis of a double reheat steam power plant.
+ According to Ref.~\cite{Wu2014Component}, component and process based exergy evaluation was performed on a coal-fired power plant in China, which provides guidance for energy-saving strategies.
+ It pointed out that the exergy loss in the heat transfer process accounts for the largest proportion.
 
-%% If you have bibdatabase file and want bibtex to generate the
-%% bibitems, please use
-%%
-%%  \bibliographystyle{elsarticle-harv} 
-%%  \bibliography{<your bibdatabase>}
+ Though the high live steam pressure and temperature of USC unit improves its efficiency, there are still some imperfections which limit the improvement of its performance . 
 
-%% else use the following coding to input the bibitems directly in the
-%% TeX file.
+For example, the double-reheat system causes great superheat degree of the first several extractions and the boiler exhaust temperature is extremely high, which leads to unreasonable energy-level matching and great exergy loss. 
 
-%\begin{thebibliography}{00}
+To reduce the superheat degree of the extractions, Liu et al. [??] investigated the thermal performance of the steam and water cycle with single reheat after the installation of an additional outer steam cooler (AOC).
+Results show that the AOC is an effective method to reduce the superheat degree and improve the efficiency of the unit.
+Besides, Kjaer~\cite{Kjaer2010A} proposed a regenerative steam turbine to utilize the superheat degree of the extractions.
+In this design, part of the extraction from the high pressure turbine enters the additional regenerative steam turbine not the regenerative heater.
+Extractions from the intermediate pressure turbine are replaced by those from the regenerative steam turbine.
+The superheat degree of the extraction is significantly reduced in this design, and the exergy destruction of regenerative heaters is reduced, which results in an overall improvement in efficiency.
 
-%% \bibitem[Author(year)]{label}
-%% Text of bibliographic item
+To reuse the energy of the exhaust flue gas Ref.~\cite{Xu2013Techno} proposed a low pressure economizer (LPE) based on the data of some 1000\,MW typical power generation units in China and four possible arrangements of the LPE installation were proposed to compare its energy-saving effects.
+Results indicated that LPE connected with higher temperature section of the condensate line brings more reduction of standard coal equivalent (SCE).
+Wang et al.~\cite{Wang2012Application} investigated the energy and water saving and the reduction of CO$_2$ after the installation of LPE.
+Results show that the optimized measures can bring a reduction of SCE by 2-4\,g/kWh.
+Stevanovic et al.~\cite{Stevanovic2014Efficiency} proposed an additional high pressure economizer installed at a long term running lignite-fired power plant.
+Results show that more than 30\,MW of the flue gas waste heat is recovered, which brings an improvement in gross efficiency by 0.53\% and 9.4\,MW extra output power.
+In Ref. [??], the air preheater is divided into two stages to reduce the temperature difference in heat transfer process.
+Besides, a LPE is installed between the two air preheaters to obtain an appropriate flue gas temperature range.
+Thermodynamic and Technic-economic analysis are conducted to reveal the performance improvement.
+It was found that the SCE consumption can be reduced by 6.7\,g/kWh. 
 
-%
-\section{References}
-\section*{Acknowledgement}
-This is the 
-\clearpage
+Due to arrangement of boiler heating surface and design of regenerative system belong to deferent research area, researches concentrate more on the optimization of these two systems respectively, and ignored the joint optimization of boiler tail flue heating surface and regenerative system to achieve energy cascade utilization and improve system efficiency.
+To reduce both systems' exergy loses, a theoretical optimization design of cascaded utilization of energy for a 1000\,MW double reheat USC unit (novel system) is proposed. Variations and energy saving effects of a double reheat ultra-supercritical thermal system (reference system) and the novel system are analyzed to evaluate their performance. 
+
+
+\section{Reference system introduction and analysis}
+\label{sec:2}
+\subsection{Introduction of reference system} % (fold)
+\label{sub2:intro}
+
+% subsection subsection_name (end)
+
+A typical coal-fired double reheat USC power plant in operation is chosen as the reference unit.
+The parameter settings that maximize continuous power are 310\,bar/600$^\circ$Cfor the main steam, 610$^\circ$C for the reheat steam pressure, 33.5\% for the proportion of the single reheat steam pressure to the main steam pressure, and 33\% for the proportion of the double reheat steam pressure to the single reheat steam pressure[6].
+The output power of the double reheat unit under the condition of THA load is 1000 MW.
+The unit consists of one super high pressure turbine (VHP), one high pressure turbine (HP), one intermediate pressure turbine (IP), and two low pressure turbines (LP).
+10-stage regenerative system with four high pressure regenerative heaters (HRH), five low pressure regenerative heaters (LRH), and one deaerator (DEA) are adopted.
+Besides two additional outer steam coolers (AOC1, AOC2) are used to cool two extractions due to its high super-heating degree. The exhaust steam pressure of the steam turbine is set 4.5\,kPa. The simplified schematic of the unit is presented in Fig~\ref{fig:reference_system}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{fig/reference_system}
+\caption{Schematic of the reference system} 
+\label{fig:reference_system}
+\end{figure}
+%从参考系统的锅炉虽然仍然采用Π型布置，但其内部受热面和传统一次再热锅炉有较大区别。
+Furnace layout shown in Fig~\ref{fig:boiler_surface}, the boiler furnace is composited by the membrane wall, along flue gas flow direction lays low-temperature superheater (Lts) screen tube, cold segment of high-temperature ﬁrst reheater (Csf), cold segment of high-temperature second reheater (Csf), High temperature super-heater (Hts), hot segment of high-temperature ﬁrst reheater (Hsf), hot segment of high-temperature second reheater (Hss).
+After Hsf and Hss the flue gas channel is divided into the front-duct flue and the back-duct flue. The front duct arranges low-temperature first reheater (Ltfr) and the front-duct economizerz (Feco), the back duct arranges a low-temperature second reheater (Ltsr) and back-duct economizer (Beco). The rear flue is equipped with an air preheater(APH).
+% 从锅炉受热面布置可以看出，锅炉主要受热面布置在炉膛之中，而水平烟道和竖井烟道中仅布置有空气预热设备。所以锅炉可以分成两部分:炉膛内完成水/蒸汽吸热的boiler，和尾部烟道内 完成空气预热的APH。
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\textwidth]{fig/boiler_surface}
+\caption{Boiler internal heat exchangers layout} 
+\label{fig:boiler_surface}
+\end{figure}
+
+\subsection{Thermal performance evaluation of reference system} % (fold)
+\label{sub2:eval}
+The main  parameters of the reference system are shown in Table~\ref{tab:ref input}.
+
+\begin{table}[htbp]
+\caption{The main input parameter of reference system }
+\label{tab:ref input}
+\centering
+
+\begin{tabular}{lll}
+\toprule 
+Items & Unit & Value\tabularnewline
+\midrule
+Live steam mass flow rate          	&t/h  &2533  			\\
+Second reheater  		&Mass flow   	&2002\,t/h \tabularnewline
+                     	& Pressure 	     &311.4\,bar 			&Second reheater inlet	&Pressure     	&3.29\,bar \tabularnewline
+                     	& Temperature    &605$^\circ$C      	&  						&Temperature  	&433$^\circ$C \tabularnewline
+First reheater      	&Mass flow       &2318\,t/h  			&Second reheater outlet	&Pressure     	&3.05\,bar \tabularnewline
+First reheater inlet	& Pressure       &105.3\,bar 			&  						&Temperature  	&613$^\circ$C \tabularnewline
+                     	&Temperature     &427$^\circ$C      	&Feedwater  			&Temperature 	&314$^\circ$C \tabularnewline
+First reheater outlet	&Pressure        &103.2\,bar 			&Turbine exhaust 		&pressure 		&4.5 kPa \tabularnewline
+                     	& Temperature    &6137$^\circ$C 		& 						&  				& \tabularnewline
+\bottomrule
+\end{tabular}	
+\end{table}
+
+Table 2 gives the temperature profiles and exergy efficiency of regenerative heaters and the air preheater, revealing the energy match level of heat exchangers.
+For the air preheater, the temperature of flue gas at the inlet of the air preheater is 376$^\circ$C under THA condition, while the temperature of the air to be heated by the flue is 25$^\circ$C, leading to the exergy loss of 27.17\,MW. The temperature difference of the air preheater is calculated to be 72$^\circ$C, and average temperature of the air is 177$^\circ$C, causing the exergy efficiency of 77.16\%.
+\begin{table}[htbp]
+\caption{fluid parameters of heat exchangers and air preheater}
+\label{tab:reheater parameter}
+\centering
+\small
+\begin{tabular}{ccccc}
+\toprule 
+\multirow{2}{2cm}{Components} & \multirow{2}{2cm}{Hot fluid pressure(bar)} &\multirow{2}{2.5cm}{Hot fluid temperature($^\circ$C)} & \multirow{2}{2.5cm}{Cold fluid temperature($^\circ$C)} & \multirow{2}{3.5cm}{Fluid temperature difference($^\circ$C)}\tabularnewline
+&&&&\tabularnewline
+\midrule
+APH &  & 376．00 & 23.00 & 353.00\tabularnewline
+AOC1 &  & 526.56 & 304.51 & 222.05\tabularnewline
+AOC2 &  & 527.48 & 304.51 & 222.97\tabularnewline
+HRH1 &  & 417.07 & 273.62 & 143.45\tabularnewline
+HRH2 &  & 314.53 & 240.73 & 73.8\tabularnewline
+HRH3 &  & 434.54 & 205.89 & 228.65\tabularnewline
+HRH4 &  & 316.51 & 186.48 & 130.03\tabularnewline
+DEA &  & 447.37 & 163.63 & 283.74\tabularnewline
+LRH6 &  & 394.01 & 140.46 & 253.55\tabularnewline
+LRH7 &  & 313.17 & 104.49 & 208.68\tabularnewline
+LRH8 &  & 191.84 & 82.42 & 109.42\tabularnewline
+LRH9 &  & 116.61 & 59.25 & 	57.36\tabularnewline
+\bottomrule
+\end{tabular}
+\end{table}
+\normalsize
+
+
+
+
+
 \section*{References}
 \bibliographystyle{elsarticle-num}
-\bibliography{1}
-%\end{thebibliography}
+
+\bibliography{bib/reference.bib}
+
+
 \end{document}
 
 \endinput
-%%
-%% End of file `elsarticle-template-harv.tex'.
+\%\%
+\%\% End of file `article.tex'.
