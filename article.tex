@@ -131,7 +131,7 @@ To reduce both systems' exergy loses, a theoretical optimization design of casca
 
 \section{System optimization of double reheat USC system}
 \label{sec2:system intro}
-\subsection{reference system on operation} % (fold)
+\subsection{Reference system on operation} % (fold)
 \label{sub2:ref intro}
 A typical coal-fired double reheat USC power plant in operation is chosen as the reference unit.
 The parameter settings that maximize continuous power are 310\,bar/600$^\circ$Cfor the main steam, 610$^\circ$C for the reheat steam pressure, 33.5\% for the proportion of the single reheat steam pressure to the main steam pressure, and 33\% for the proportion of the double reheat steam pressure to the single reheat steam pressure[6].
@@ -275,13 +275,48 @@ Exergy analysis, is adopted to reveal the location, the magnitude and the source
 Usually, exergy loss and exergy efficiency are chosen as evaluation indices of the thermal system or an individual component, 
 The general exergy balance of component can be expressed in the following form:
 \begin{equation}
+\label{equation:1}
 \dot{I}=\sum\dot{E}{}_{in}-\sum\dot{E}{}_{out}+\sum\dot{W}{}_{in}-\sum\dot{W}{}_{out}
 \end{equation}
+Exergy efficiency can be calculated in the following form:
 \begin{equation}
+\label{equation:2}
 \eta=\frac{\dot{E}{}_{earned}}{\dot{E}{}_{cost}}
 \end{equation}
+For different equipment under stable operating conditions, equation~\ref{equation:1}~\ref{equation:2} have different forms as shown in Table 5~\cite{}
+For flue gas, air, water and steam, the specific exergy can be calculated by equation~\ref{equation:3}.
 
-
+\begin{equation}{}
+\label{equation:3}
+e=h-h_{0}-T_{0}\left(s-s_{0}\right)
+\end{equation}
+Then the total exergy rate associated with ﬂuid stream becomes:
+\begin{equation}
+\dot{E}=\dot{m}e=\dot{m}\left[h-h_{0}-T_{0}\left(s-s_{0}\right)\right]{}
+\end{equation}
+The fuel speciﬁc exergy is calculated as[?]: 
+\begin{equation}
+e_{fuel}=LHV\left(1.0064+0.1519\frac{H}{C}+0.0616\frac{O}{C}+0.0429\frac{N}{C}\right)
+\end{equation}
+Where LHV refer to lower heating value of fuel, C, H, O, N refer to mass fractions of carbon, hydrogen, oxygen, nitrogen by element analysis.
+\begin{table}
+\caption{The exergy destruction rate and exergy efficiency equations for plant
+components}
+\label{table:exergy equation}
+\centering{}%
+\begin{tabular}{ccc}
+\toprule {}
+ & Exergy destruction rate & Exergy efficiency\tabularnewline
+\midrule
+Boiler &  & \tabularnewline
+Pumps &  & \tabularnewline
+Heaters &  & \tabularnewline
+Turbine &  & \tabularnewline
+Condenser &  & \tabularnewline
+Cycle &  & \tabularnewline
+\bottomrule
+\end{tabular}
+\end{table}
 
 
 % subsubsection subsubsection_name (end)
