@@ -2,10 +2,13 @@
 *.fls
 *.spl
 *.synctex.gz
-
+*.out
 *.aux
 *.bbl
 *.blg
 *.fdb_latexmk
 *.xdv
 article.pdf
+*.sublime-project
+*.sublime-workspace
+*.bib.bak
