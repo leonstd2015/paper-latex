@@ -9,3 +9,8 @@
 *.fdb_latexmk
 *.xdv
 article.pdf
+*.out
+*.bib.bak
+*.sublime-project
+*.sublime-workspace
+*.bib.sav
