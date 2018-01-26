@@ -185,7 +185,7 @@ For the air preheater, the temperature of flue gas at the inlet of the air prehe
 \caption{fluid parameters of heat exchangers and air preheater}
 \label{tab:reheater parameter}
 \centering
-\begin{tabular}{cccc}
+\begin{tabular}{llll}
 \toprule 
 \multirow{2}{2cm}{Components} &\multirow{2}{2.7cm}{Hot fluid temperature($^\circ$C)}  & \multirow{2}{2.7cm}{Cold fluid temperature($^\circ$C)}&  \multirow{2}{2.5cm}{LMTD($^\circ$C)}\tabularnewline
 &&&\tabularnewline
@@ -283,7 +283,7 @@ Exergy efficiency can be calculated in the following form:
 \label{equation:2}
 \eta=\frac{\dot{E}{}_{earned}}{\dot{E}{}_{cost}}
 \end{equation}
-For different equipment under stable operating conditions, equation~\ref{equation:1}~\ref{equation:2} have different forms as shown in Table 5~\cite{}
+For different equipment under stable operating conditions, equation~\ref{equation:1}~\ref{equation:2} have different forms as shown in Table~\ref{tab:exergy equation}~\cite{Aljundi2009Energy}
 For flue gas, air, water and steam, the specific exergy can be calculated by equation~\ref{equation:3}.
 
 \begin{equation}{}
@@ -300,24 +300,51 @@ e_{fuel}=LHV\left(1.0064+0.1519\frac{H}{C}+0.0616\frac{O}{C}+0.0429\frac{N}{C}\r
 \end{equation}
 Where LHV refer to lower heating value of fuel, C, H, O, N refer to mass fractions of carbon, hydrogen, oxygen, nitrogen by element analysis.
 \begin{table}
-\caption{The exergy destruction rate and exergy efficiency equations for plant
-components}
-\label{table:exergy equation}
-\centering{}%
-\begin{tabular}{ccc}
-\toprule {}
- & Exergy destruction rate & Exergy efficiency\tabularnewline
+\caption{Exergy analysis equations for plant components}
+\label{tab:exergy equation}
+\centering
+\begin{tabular}{lll}
+\toprule 
+ & Exergy destruction rate  & Exergy efficiency\tabularnewline
 \midrule
-Boiler &  & \tabularnewline
-Pumps &  & \tabularnewline
-Heaters &  & \tabularnewline
-Turbine &  & \tabularnewline
-Condenser &  & \tabularnewline
-Cycle &  & \tabularnewline
+Boiler & $\dot{I}_{boiler}=\dot{E}{}_{fuel}+\dot{E}{}_{in}-\dot{E}{}_{out}$ & $\eta_{\uppercase\expandafter{\romannumeral2},boiler}=\frac{\dot{E}{}_{out}-\dot{E}{}_{in}}{\dot{E}{}_{fuel}}$\tabularnewline
+Pump & $\dot{I}_{pump}=\dot{E}{}_{in}-\dot{E}{}_{out}+\dot{W}{}_{pump}$ & $\eta_{\uppercase\expandafter{\romannumeral2},pump}=1-\frac{\dot{I}_{pump}}{\dot{W}{}_{pump}}$\tabularnewline
+Heater & $\dot{I}_{heater}=\dot{E}{}_{in}-\dot{E}{}_{out}$ & $\eta_{\uppercase\expandafter{\romannumeral2},heater}=1-\frac{\dot{I}_{heater}}{\dot{E}{}_{in}}$\tabularnewline
+Turbine & $\dot{I}_{turbine}=\dot{E}{}_{in}-\dot{E}{}_{out}-\dot{W}{}_{el}$ & $\eta_{\uppercase\expandafter{\romannumeral2},turbine}=1-\frac{\dot{I}_{turbine}}{\dot{E}{}_{in}-\dot{E}{}_{out}}$\tabularnewline
+Condenser & $\dot{I}_{condenser}=\dot{E}{}_{in}-\dot{E}{}_{out}+\dot{W}{}_{p}$ & $\eta_{\uppercase\expandafter{\romannumeral2},boiler}=\frac{\dot{E}{}_{out}}{\dot{E}{}_{in}+\dot{W}{}_{p}}$\tabularnewline
+Cycle & $\dot{I}_{cycle}=\sum_{all}\dot{I}_{i}$ & $\eta_{\uppercase\expandafter{\romannumeral2},cycle}=\frac{\dot{W}{}_{net,out}}{\dot{E}{}_{fuel}}$\tabularnewline
 \bottomrule
 \end{tabular}
 \end{table}
 
+\subsection{Thermodynamic performance evaluation} % (fold)
+\label{sub:Thermodynamic_evaluation}
+Based on the analysis of the reference system, the temperature difference of the heat exchangers is very high and exergy efficiency is rather low. Using turbine extractions to heat air can realize the reduce the heat transfer temperature difference and improve efficiency. The economizer outlet flue gas is used to heat low-temperature economizer can also reduce the loss of regenerative system.
+% In order to complete the heat balance calculation of the thermodynamic system, the key parameters in the novel system need to be set.
+% The novel system’s parameters are based on reference system, so the main parameters must be the same. The main parameters settled are including: superheat steam’s mass flow, pressure and temperature; First/second reheater’s inlet and outlet pressure and temperature; Turbine Exhaust pressure and temperature; turbine extraction’s pressure and temperature/ specific enthalpy etc. The main parameters settled under THA situation can be found in Table 1 and Table 4 . 
+The results of exergy analysis of the optimization system are presented in Table 5. It is found that the optimization system has an improvement in exergetic performance. The total exergy loss of the cascaded utilization system is 1096.52 MW, which is 32.28 MW lower than the original. The new system also brings the improvement from 46.98\% to 47.99\%. Results show that the exergy loss of boiler is 855.72 MW, leading to the increment of exergy efficiency by 0.18\%. In addition, there is almost no change of the exergy parameters of the steam turbines, generator and condenser. For the air heating system and regenerative system, great change happens compared with the formal system, and detailed analysis will be carried out next.
+
+\begin{table}
+\caption{Thermodynamic performance of the reference and novel systems}
+\label{table:thermal performance compare}
+\centering
+\begin{tabular}{p{7.5cm}p{1.75cm}p{1.75cm}}
+\toprule 
+Items & Reference system & Novel system\tabularnewline
+\midrule
+Net generating power (MW) & 999.10 & 1011.19\tabularnewline
+Generating efficiency (\%) & 47.69 & 48.73\tabularnewline
+Addition in generating efficiency (\%) &  & 1.04\tabularnewline
+Standard coal consumption rate (g/kWh) & 257.59 & 252.10\tabularnewline
+Reduction in standard coal consumption rate (g/kWh) &  & 5.49\tabularnewline
+Exergy efficiency (\%) & 46.51 & 47.52\tabularnewline
+Addition in generating efficiency (\%) &  & 1.01\tabularnewline
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% subsubsection subsubsection_name (end)
 
 % subsubsection subsubsection_name (end)
 \section*{References}
