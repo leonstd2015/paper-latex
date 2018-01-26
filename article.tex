@@ -187,7 +187,7 @@ For the air preheater, the temperature of flue gas at the inlet of the air prehe
 \centering
 \begin{tabular}{llll}
 \toprule 
-\multirow{2}{2cm}{Components} &\multirow{2}{2.7cm}{Hot fluid temperature($^\circ$C)}  & \multirow{2}{2.7cm}{Cold fluid temperature($^\circ$C)}&  \multirow{2}{2.5cm}{LMTD($^\circ$C)}\tabularnewline
+\multirow{2}{2cm}{Components} &\multirow{2}{2.7cm}{Hot fluid temperature($^\circ$C)}  & \multirow{2}{3.2cm}{Cold fluid temperature ($^\circ$C)}&\multirow{2}{2.5cm}{LMTD ($^\circ$C)}\tabularnewline
 &&&\tabularnewline
 \midrule
 APH  &  376.00 	& 23.00  & 72.4\tabularnewline
@@ -319,10 +319,14 @@ Cycle & $\dot{I}_{cycle}=\sum_{all}\dot{I}_{i}$ & $\eta_{\uppercase\expandafter{
 
 \subsection{Thermodynamic performance evaluation} % (fold)
 \label{sub:Thermodynamic_evaluation}
-Based on the analysis of the reference system, the temperature difference of the heat exchangers is very high and exergy efficiency is rather low. Using turbine extractions to heat air can realize the reduce the heat transfer temperature difference and improve efficiency. The economizer outlet flue gas is used to heat low-temperature economizer can also reduce the loss of regenerative system.
+Based on the analysis of the reference system, the temperature difference of the heat exchangers is very high and exergy efficiency is rather low.
+Using turbine extractions to heat air can realize the reduce the heat transfer temperature difference and improve efficiency. 
+The economizer outlet flue gas is used to heat low-temperature economizer can also reduce the loss of regenerative system.
 % In order to complete the heat balance calculation of the thermodynamic system, the key parameters in the novel system need to be set.
 % The novel system’s parameters are based on reference system, so the main parameters must be the same. The main parameters settled are including: superheat steam’s mass flow, pressure and temperature; First/second reheater’s inlet and outlet pressure and temperature; Turbine Exhaust pressure and temperature; turbine extraction’s pressure and temperature/ specific enthalpy etc. The main parameters settled under THA situation can be found in Table 1 and Table 4 . 
-The results of exergy analysis of the optimization system are presented in Table 5. It is found that the optimization system has an improvement in exergetic performance. The total exergy loss of the cascaded utilization system is 1096.52 MW, which is 32.28 MW lower than the original. The new system also brings the improvement from 46.98\% to 47.99\%. Results show that the exergy loss of boiler is 855.72 MW, leading to the increment of exergy efficiency by 0.18\%. In addition, there is almost no change of the exergy parameters of the steam turbines, generator and condenser. For the air heating system and regenerative system, great change happens compared with the formal system, and detailed analysis will be carried out next.
+% 对于新旧系统表格的热力参数进行分析，下面这段话太少
+
+
 
 \begin{table}
 \caption{Thermodynamic performance of the reference and novel systems}
@@ -342,8 +346,59 @@ Addition in generating efficiency (\%) &  & 1.01\tabularnewline
 \bottomrule
 \end{tabular}
 \end{table}
+% 根据用损失对比表从新进行分析，从为什么锅炉空预器效率提高，其他不变或者降低说起
+The results of exergy analysis of the optimization system are presented in Table~\ref{table:system exergy campare}. 
+It is found that the optimization system has an improvement in exergetic performance.
+ The total exergy loss of the cascaded utilization system is 1096.52 MW, which is 32.28 MW lower than the original. 
+ The new system also brings the improvement from 46.98\% to 47.99\%. 
+ Results show that the exergy loss of boiler is 855.72 MW, leading to the increment of exergy efficiency by 0.18\%. In addition, there is almost no change of the exergy parameters of the steam turbines, generator and condenser. 
+ For the air heating system and regenerative system, great change happens compared with the formal system, and detailed analysis will be carried out next.
+
+\begin{table}
+\caption{Systems' exergy destruction rate comparison }
+\label{table:system exergy campare}
+\centering
+\begin{tabular}{lll}
+\toprule 
+Items & Reference System\,(MW) & Novel System\,(MW)\tabularnewline
+\midrule 
+Boiler(without AP) & 883.26 & 872.22\tabularnewline
+Turbine & 63.33 & 63.97\tabularnewline
+Air Preheater  & 27.39 & 16.55\tabularnewline
+Regenerative system & 22.53 & 21.56\tabularnewline
+Other & 131.03 & 142.42 \tabularnewline
+Total & 1116.72 & 1127.54\tabularnewline
+\bottomrule
+\end{tabular}
+\end{table}
 
 
+
+\begin{table}
+\label{table:extraction compare}
+\caption{Systems' extractions comparison}
+\begin{centering}
+\begin{tabular}{llll}
+\toprule 
+\multirow{2}{*}{Extractions} & \multirow{2}{2.5cm}{Reference system (kg/s)} & \multicolumn{2}{c}{Novel system (kg/s)}\tabularnewline
+\cmidrule{3-4} 
+ &  & to RHs & to APHs\tabularnewline
+\midrule
+1st & 54.47 & 43.79 & 15.42\tabularnewline
+2nd & 52.18 & 18.52 & 13.5\tabularnewline
+3rd & 37.86 & 31.71 & 14.62\tabularnewline
+4th & 20.53 & 5.66 & 9.5\tabularnewline
+5th & 11.95 & 9.78 & 5.67\tabularnewline
+6th & 19.94 & 9.88 & 7.83\tabularnewline
+7th & 30.19 & 14.16 & 12.85\tabularnewline
+8th & 16.31 & 3.11 & 27.1\tabularnewline
+9th & 18.93 & 18.93 & 0\tabularnewline
+10th & 20.61 & 20.6 & 0\tabularnewline
+Total & 282.97 & 176.14 & 106.49\tabularnewline
+\bottomrule
+\end{tabular}
+\par\end{centering}
+\end{table}
 % subsubsection subsubsection_name (end)
 
 % subsubsection subsubsection_name (end)
