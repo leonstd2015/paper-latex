@@ -10,7 +10,6 @@
 *.xdv
 article.pdf
 *.bib.sav
-
 *.out
 *.bib.bak
 *.sublime-project
