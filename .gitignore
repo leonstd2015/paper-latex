@@ -1,4 +1,4 @@
-*.log
+﻿*.log
 *.fls
 *.spl
 *.synctex.gz
@@ -9,14 +9,15 @@
 *.fdb_latexmk
 *.xdv
 article.pdf
-<<<<<<< HEAD
+*.bib.sav
+
 *.out
 *.bib.bak
 *.sublime-project
 *.sublime-workspace
 *.bib.sav
-=======
+
 *.sublime-project
 *.sublime-workspace
 *.bib.bak
->>>>>>> origin文件
+
