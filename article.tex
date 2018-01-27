@@ -73,7 +73,7 @@
 Herein, an novel system of a 1000\,\,MW double-reheat ultra-supercritical (USC) unit with turbine-extraction-heated air preheaters (EAPHs), which use turbine extractions as heat sources of air preheaters while economizer outlet flue gas’ heat absorbed by low pressure economizers (LPEs), is designed based on reference system of a 1000\,\,MW double-reheat USC unit. 
 The energetic performance analyses of the novel system and reference system are used to compare their major parameters. 
 In addition, thermodynamic analyses under partial load operation conditions are presented. 
-The results show that the proposed novel system reduced the exergy loss in the air-heating processes. Furthermore, the novel system increases the temperature of secondary air and reduces the overall superheat degree of several extractions.
+The results show that the proposed novel system reduced the exergy destruction in the air-heating processes. Furthermore, the novel system increases the temperature of secondary air and reduces the overall superheat degree of several extractions.
  Theoretically, the novel system reduces the SCE consumption by nearly 5.5\,g/kWh under THA load when the temperature of the flue gas entering the electrostatic precipitator is set to 95$^\circ$C.
  Moreover, the novel system can still has advantages in coal saving under partial load condition.
  Our findings indicate that system with EAPH could improves the performance of the unit and may provide a theoretical basis for the novel of double-reheat USC units.
@@ -100,14 +100,14 @@ According to Ref.~\cite{Yaxiu2013Thermal}, a double reheat unit with the inlet p
  The U.S. built the first double reheat unit with main parameter 34.4 MPa/649/566/566$^\circ$C in 1960s.
  Two 700 MW double reheat USC units in Japan were put into operation in 1990. 
  The Taizhou power plant in China began to build double reheat USC units in 2012, and put it into operation in 2015.
- Over the past few decades, the double reheat USC units have received more and more attention for its rapid development all over the world. Zhao Z et al.~\cite{Zhao2017Exergy} studied the exergy distribution system for a 1000\,MW double reheat USC power plant and provided the main reasons that led to exergy loss on the steam turbine.
+ Over the past few decades, the double reheat USC units have received more and more attention for its rapid development all over the world. Zhao Z et al.~\cite{Zhao2017Exergy} studied the exergy distribution system for a 1000\,MW double reheat USC power plant and provided the main reasons that led to exergy destruction on the steam turbine.
  Rashidi et al.~\cite{Rashidi2014Thermodynamic} investigated the thermodynamic analysis of a double reheat steam power plant.
  According to Ref.~\cite{Wu2014Component}, component and process based exergy evaluation was performed on a coal-fired power plant in China, which provides guidance for energy-saving strategies.
- It pointed out that the exergy loss in the heat transfer process accounts for the largest proportion.
+ It pointed out that the exergy destruction in the heat transfer process accounts for the largest proportion.
 
  Though the high live steam pressure and temperature of USC unit improves its efficiency, there are still some imperfections which limit the improvement of its performance . 
 
-For example, the double-reheat system causes great superheat degree of the first several extractions and the boiler exhaust temperature is extremely high, which leads to unreasonable energy-level matching and great exergy loss. 
+For example, the double-reheat system causes great superheat degree of the first several extractions and the boiler exhaust temperature is extremely high, which leads to unreasonable energy-level matching and great exergy destruction. 
 
 To reduce the superheat degree of the extractions, Liu et al. [??] investigated the thermal performance of the steam and water cycle with single reheat after the installation of an additional outer steam cooler (AOC).
 Results show that the AOC is an effective method to reduce the superheat degree and improve the efficiency of the unit.
@@ -181,7 +181,7 @@ Items & Unit & Value\tabularnewline
 \end{tabular}	
 \end{table}
 Table 2 gives the temperature profiles and exergy efficiency of regenerative heaters and the air preheater, revealing the energy match level of heat exchangers.
-For the air preheater, the temperature of flue gas at the inlet of the air preheater is 376$^\circ$C under THA condition, while the temperature of the air to be heated by the flue is 25$^\circ$C, leading to the exergy loss of 27.17\,MW. The temperature difference of the air preheater is calculated to be 72$^\circ$C, and average temperature of the air is 177$^\circ$C, causing the exergy efficiency of 77.16\%.
+For the air preheater, the temperature of flue gas at the inlet of the air preheater is 376$^\circ$C under THA condition, while the temperature of the air to be heated by the flue is 25$^\circ$C, leading to the exergy destruction of 27.17\,MW. The temperature difference of the air preheater is calculated to be 72$^\circ$C, and average temperature of the air is 177$^\circ$C, causing the exergy efficiency of 77.16\%.
 \begin{table}[htbp]
 \caption{fluid parameters of heat exchangers and air preheater}
 \label{tab:reheater parameter}
@@ -236,7 +236,7 @@ For example, the 2nd extraction has the highest temperature, and is applied to h
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.3\textwidth]{fig/extraction_heat_APH}
+\includegraphics[width=0.3\textwidth]{fig/extraction_heat_APH}%extraction_heat_APH
 \caption{Process flow diagram of RH and APH} 
 \label{fig:extraction_heat_APH}
 \end{figure}
@@ -260,7 +260,7 @@ However, only some characteristic curves of turbine can actually be obtained, wh
 It’s needed to assume that the difference between the built-in data and the actual data to meet the error requirements.
 The following assumptions need to be made in order to be able to simulate correctly.
 \begin{enumerate}[(1)]
-\item Both novel and reference systems are operated in stable condition
+\item Both novel and reference systems are operated in stable condition.
 \item The thermal efficiency of the equipment is calculated from the thermal balance of the input and output parameters of the components, assuming that the calculation error requirement can be met.
 \item According to the heat map, set the upper and lower end difference of the heat exchanger as a fixed value, and do not change among different condition.
 \item  Do not take the pips' complexity and equipment’s installation difficulty of the novel system as consideration.
@@ -273,7 +273,7 @@ The following assumptions need to be made in order to be able to simulate correc
 \label{ssub3:analsys method} 
 %为了能够对优化系统与参考系统进行评估，揭示系统优化的内在机理，本文引入热力学第二定律的分析方法即用分析方法。
 Exergy analysis, is adopted to reveal the location, the magnitude and the sources of thermodynamic inefficiencies of the unit.
-Usually, exergy loss and exergy efficiency are chosen as evaluation indices of the thermal system or an individual component, 
+Usually, exergy destruction and exergy efficiency are chosen as evaluation indices of the thermal system or an individual component, 
 The general exergy balance of component can be expressed in the following form:
 \begin{equation}
 \label{equation:1}
@@ -350,13 +350,13 @@ Addition in generating efficiency (\%) &  & 1.01\tabularnewline
 % 根据用损失对比表从新进行分析，从为什么锅炉空预器效率提高，其他不变或者降低说起
 The results of exergy analysis of the optimization system are presented in Table~\ref{table:system exergy campare}. 
 It is found that the optimization system has an improvement in exergetic performance.
- The total exergy loss of the cascaded utilization system is 1096.52 MW, which is 32.28 MW lower than the original. 
+ The total exergy destruction of the cascaded utilization system is 1096.52 MW, which is 32.28 MW lower than the original. 
  The new system also brings the improvement from 46.98\% to 47.99\%. 
- Results show that the exergy loss of boiler is 855.72 MW, leading to the increment of exergy efficiency by 0.18\%. In addition, there is almost no change of the exergy parameters of the steam turbines, generator and condenser. 
+ Results show that the exergy destruction of boiler is 855.72 MW, leading to the increment of exergy efficiency by 0.18\%. In addition, there is almost no change of the exergy parameters of the steam turbines, generator and condenser. 
  For the air heating system and regenerative system, great change happens compared with the formal system, and detailed analysis will be carried out next.
 
-Through the analysis of the reference system and the optimization system, it can be seen that the exergy efficiency of the optimization system is improved and the exergy loss is reduced.
-Comparing the proportion of different components in the total exergy loss between the two systems, we can see that in addition to the turbine, the exergy loss of all components is reduced. 
+Through the analysis of the reference system and the optimization system, it can be seen that the exergy efficiency of the optimization system is improved and the exergy destruction is reduced.
+Comparing the proportion of different components in the total exergy destruction between the two systems, we can see that in addition to the turbine, the exergy destruction of all components is reduced. 
 Among them, the air preheating system efficiency is the most obviously improved，to 38.94\%.
 
 
@@ -414,7 +414,7 @@ The variation of mass flow rate of extractions is presented in Fig 6.
  Turbine total extraction steam volume change affect its exergy efficiency by 2.03\%.
 
 The air is heated by the staged air preheaters and additional outer steam coolers in the cascaded utilization system.
- It can be seen from Table 5 that the total exergy loss of the air heating system is 16.35 MW, 10.82 MW lower than that of the original air preheater which is 27.17 MW. 
+ It can be seen from Table 5 that the total exergy destruction of the air heating system is 16.35 MW, 10.82 MW lower than that of the original air preheater which is 27.17 MW. 
  Fig 7 shows that the exergy efficiency of APHs and AOCs is higher than 82\%, except APH8.
  For the air preheaters, the improvement in performance results from more reasonable energy utilization and the heat transform method. 
  In the conventional air preheater, the air is heated by high temperature flue gas through convection. 
@@ -425,16 +425,31 @@ The air is heated by the staged air preheaters and additional outer steam cooler
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.6\textwidth]{fig/APH_temper_compare.png}
-\caption{T-q diagram of Air preheat subsystems} 
+\caption{T-Q diagram of Air preheat subsystems} 
 \label{fig:APH_temper_compare}
 \end{figure}
 
-% \begin{figure}[htbp]
-% \centering
-% \includegraphics[width=0.6\textwidth]{fig/APH_temper_compare.png}
-% \caption{Exergy destruction and efficiency of air preheat subsystem of novel system} 
-% \label{fig:novel_APH_exergy}
-% \end{figure}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{fig/novel_APH_exergy.png}
+\caption{Exergy destruction and efficiency of air preheat subsystem of novel system} 
+\label{fig:novel_APH_exergy}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\textwidth]{fig/regenerative_subsys_compare.png}
+\caption{Exergy destruction comparison of regenerative subsystems} 
+\label{fig:regenerative_subsys_compare}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\textwidth]{fig/partload_efficiency.png}
+\caption{Exergy efficiency in off-design conditions} 
+\label{fig:partload_efficiency}
+\end{figure}
+
 
 % subsubsection subsubsection_name (end)
 \section*{References}
