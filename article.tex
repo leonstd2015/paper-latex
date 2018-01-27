@@ -7,7 +7,7 @@
 \usepackage{amssymb,hyperref,booktabs,multirow}
 \usepackage{enumerate}
 
-
+\usepackage{graphicx,float}
 % \usepackage{graphicx}%插入图片
 
 % \usepackage{amssymb}%数学符号
@@ -354,6 +354,11 @@ It is found that the optimization system has an improvement in exergetic perform
  Results show that the exergy loss of boiler is 855.72 MW, leading to the increment of exergy efficiency by 0.18\%. In addition, there is almost no change of the exergy parameters of the steam turbines, generator and condenser. 
  For the air heating system and regenerative system, great change happens compared with the formal system, and detailed analysis will be carried out next.
 
+Through the analysis of the reference system and the optimization system, it can be seen that the exergy efficiency of the optimization system is improved and the exergy loss is reduced.
+Comparing the proportion of different components in the total exergy loss between the two systems, we can see that in addition to the turbine, the exergy loss of all components is reduced. 
+Among them, the air preheating system efficiency is the most obviously improved，to 38.94\%.
+
+
 \begin{table}
 \caption{Systems' exergy destruction rate comparison }
 \label{table:system exergy campare}
@@ -399,7 +404,36 @@ Total & 282.97 & 176.14 & 106.49\tabularnewline
 \end{tabular}
 \par\end{centering}
 \end{table}
-% subsubsection subsubsection_name (end)
+% 下面两段话需要根据图修改
+The variation of mass flow rate of extractions is presented in Fig 6.
+ Mass flow rate of the 1st, 3rd, 5th and 8th extractions of the optimization system is more than that of the base model, and the rest extractions except the last two, has the opposite variation. 
+ The impact of system optimization on extraction is twofold. 
+ Air is heated by extractions, which will cause an increment in mass flow. 
+ And the use of LPE can saves extractions.so the total extraction keeps unchanged.
+ Turbine total extraction steam volume change affect its exergy efficiency by 2.03\%.
+
+The air is heated by the staged air preheaters and additional outer steam coolers in the cascaded utilization system.
+ It can be seen from Table 5 that the total exergy loss of the air heating system is 16.35 MW, 10.82 MW lower than that of the original air preheater which is 27.17 MW. 
+ Fig 7 shows that the exergy efficiency of APHs and AOCs is higher than 82\%, except APH8.
+ For the air preheaters, the improvement in performance results from more reasonable energy utilization and the heat transform method. 
+ In the conventional air preheater, the air is heated by high temperature flue gas through convection. 
+ The working principle of the staged air preheaters in the optimization system is the same as regenerative heaters. 
+ The superheated vapor is firstly cooled to saturated steam through convection, then to saturated water through phase change heat transfer, and the latter process accounts for the main part. 
+ In this case, the temperature difference is greatly reduced, causing the improvement in performance.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\textwidth]{fig/APH_temper_compare.tif}
+\caption{T-q diagram of Air preheat subsystems} 
+\label{fig:APH_temper_compare}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\textwidth]{fig/novel_APH_exergy.tif}
+\caption{Exergy destruction and efficiency of air preheat subsystem of novel system} 
+\label{fig:novel_APH_exergy}
+\end{figure}
 
 % subsubsection subsubsection_name (end)
 \section*{References}
