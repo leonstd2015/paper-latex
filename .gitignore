@@ -2,15 +2,21 @@
 *.fls
 *.spl
 *.synctex.gz
-
+*.out
 *.aux
 *.bbl
 *.blg
 *.fdb_latexmk
 *.xdv
 article.pdf
+<<<<<<< HEAD
 *.out
 *.bib.bak
 *.sublime-project
 *.sublime-workspace
 *.bib.sav
+=======
+*.sublime-project
+*.sublime-workspace
+*.bib.bak
+>>>>>>> origin文件
