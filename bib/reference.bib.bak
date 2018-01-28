@@ -1,13 +1,5 @@
-﻿@article{Aljundi2009Energy,
-  title={Energy and exergy analysis of a steam power plant in Jordan},
-  author={Aljundi, Isam H.},
-  journal={Applied Thermal Engineering},
-  volume={29},
-  number={2–3},
-  pages={324-328},
-  year={2009},
-}
-@Article{Ouedraogo2013Energy,
+% Encoding: UTF-8
+﻿@Article{Ouedraogo2013Energy,
   author   = {Ouedraogo, Nadia S.},
   title    = {Energy consumption and human development: Evidence from a panel cointegration and error correction model},
   journal  = {Energy},
@@ -183,6 +175,17 @@
   publisher = {清华大学出版社},
   year      = {1988},
   author    = {朱明善},
+}
+﻿
+
+@Article{Aljundi2009Energy,
+  author  = {Aljundi, Isam H.},
+  title   = {Energy and exergy analysis of a steam power plant in Jordan},
+  journal = {Applied Thermal Engineering},
+  year    = {2009},
+  volume  = {29},
+  number  = {2–3},
+  pages   = {324-328},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

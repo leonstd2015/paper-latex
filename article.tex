@@ -143,7 +143,7 @@ Besides two additional outer steam coolers (AOC1, AOC2) are used to cool two ext
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{fig/reference_system}
+\includegraphics[width=1\textwidth]{fig/reference_system}
 \caption{Schematic of the reference system} 
 \label{fig:reference_system}
 \end{figure}
@@ -229,7 +229,7 @@ For example, the 2nd extraction has the highest temperature, and is applied to h
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{fig/novel_system}
+\includegraphics[width=1\textwidth]{fig/novel_system.png}
 \caption{Schematic of the novel system} 
 \label{fig:novel_system}
 \end{figure}
@@ -320,6 +320,9 @@ Cycle & $\dot{I}_{cycle}=\sum_{all}\dot{I}_{i}$ & $\eta_{\uppercase\expandafter{
 
 \subsection{Thermodynamic performance evaluation} % (fold)
 \label{sub:Thermodynamic_evaluation}
+
+\subsubsection{Thermodynamic comparison in design condition}
+\label{ssub:desing_compare}
 Based on the analysis of the reference system, the temperature difference of the heat exchangers is very high and exergy efficiency is rather low.
 Using turbine extractions to heat air can realize the reduce the heat transfer temperature difference and improve efficiency. 
 The economizer outlet flue gas is used to heat low-temperature economizer can also reduce the loss of regenerative system.
@@ -330,7 +333,7 @@ The economizer outlet flue gas is used to heat low-temperature economizer can al
 
 
 \begin{table}
-\caption{Thermodynamic performance of the reference and novel systems}
+\caption{Thermodynamic performance of reference and novel systems}
 \label{table:thermal performance compare}
 \centering
 \begin{tabular}{p{7.5cm}p{1.75cm}p{1.75cm}}
@@ -361,7 +364,7 @@ Among them, the air preheating system efficiency is the most obviously improved�
 
 
 \begin{table}
-\caption{Systems' exergy destruction rate comparison }
+\caption{Exergy destruction rate comparison of reference and novel systems }
 \label{table:system exergy campare}
 \centering
 \begin{tabular}{lll}
@@ -382,7 +385,7 @@ Total & 1116.72 & 1127.54\tabularnewline
 
 \begin{table}
 \label{table:extraction compare}
-\caption{Systems' extractions comparison}
+\caption{Extractions comparison of reference and novel systems}
 \begin{centering}
 \begin{tabular}{llll}
 \toprule 
@@ -406,6 +409,7 @@ Total & 282.97 & 176.14 & 106.49\tabularnewline
 \par\end{centering}
 \end{table}
 % 下面两段话需要根据图修改
+%对于新系统优化可二次再热后蒸汽的抽汽，使8th抽汽量增加
 The variation of mass flow rate of extractions is presented in Fig 6.
  Mass flow rate of the 1st, 3rd, 5th and 8th extractions of the optimization system is more than that of the base model, and the rest extractions except the last two, has the opposite variation. 
  The impact of system optimization on extraction is twofold. 
@@ -428,7 +432,7 @@ The air is heated by the staged air preheaters and additional outer steam cooler
 \caption{T-Q diagram of Air preheat subsystems} 
 \label{fig:APH_temper_compare}
 \end{figure}
-
+% 在空气预热开始时，在第8级空预器出换热量和换热温差均较大，使之成为用损最大的换热器，随着空气预热的继续进行，换热温差降低，低1-7级空预器的用损减小。当空气进入AOC时，由于抽汽温度较高，所以换热温差增大，但由于换热量较小，造成在AOC中的用损失较小。
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{fig/novel_APH_exergy.png}
@@ -443,21 +447,51 @@ The air is heated by the staged air preheaters and additional outer steam cooler
 \label{fig:regenerative_subsys_compare}
 \end{figure}
 
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\textwidth]{fig/LPE_exergy_LMTD.png}
+\caption{Exergy efficiency and LMTD of LPEs} 
+\label{fig:LPE_exergy_LMDT}
+\end{figure}
+
+
+\subsubsection{Thermodynamic comparison in off-design conditions}
+\label{ssub:0ffdesing_compare}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.6\textwidth]{fig/partload_efficiency.png}
-\caption{Exergy efficiency in off-design conditions} 
+\caption{Exergy efficiency comparison in off-design conditions} 
 \label{fig:partload_efficiency}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.6\textwidth]{fig/partload_subsys_exergyrate.png}
-\caption{Exergy destruction rate of subsystems in off-design conditions} 
+\caption{Exergy destruction rate difference of subsystems in off-design conditions} 
 \label{fig:partload_subsys_exergyrate}
 \end{figure}
 
 % subsubsection subsubsection_name (end)
+
+\section{Conclusion}
+This study presents an optimization design of cascaded utilization of energy for a 1000 MW double reheat ultra-supercritical unit.
+ Thermodynamic analysis is conducted to reveal the comprehensive effects of the optimization measures. 
+ The optimization system is found to be effective in overcoming the imperfections, and may provide an effective method for the optimization of a double reheat system in USC unit.
+  The following conclusions are drawn from this study: 
+
+
+ \begin{enumerate}[(1)]
+\item The thermodynamic analysis indicates that the cascaded utilization system decreases the temperature difference of in air heating and flue gas cooling process which achieves the cascaded utilization of energy, and the superheat degree of the 3rd and 5th is reduced greatly. 
+Besides, more exhaust heat of the flue gas is recovered since the LPE cools the flue gas to lower temperature. 
+\item The layout in the cascaded utilization system changes the mass flow rates of extractions, which causes increment of output power of the generator and increment of the cold source loss.
+\item The optimization system improves the temperature of secondary air, which improves the fire condition in the combustion chamber.
+ The temperature of secondary air under full load in the optimization model is 365 ℃, which is 34 ℃ higher than the design value.
+\item For the first extraction, throttling loss is not existed while the feedwater of boiler improves little.  
+\item The optimization system theoretically brings remarkable energy saving effects. The simulation results show that the optimization system can reduce the SCE consumption by 5.6 g/kWh under full load, and can even bring a reduction of 2.9 g/kWh under 50\% THA load .
+\end{enumerate}
+
 \section*{References}
 \bibliographystyle{elsarticle-num}
 
