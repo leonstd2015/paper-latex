@@ -1,5 +1,5 @@
 % Encoding: UTF-8
-﻿@Article{Ouedraogo2013Energy,
+﻿﻿@Article{Ouedraogo2013Energy,
   author   = {Ouedraogo, Nadia S.},
   title    = {Energy consumption and human development: Evidence from a panel cointegration and error correction model},
   journal  = {Energy},
@@ -186,6 +186,15 @@
   volume  = {29},
   number  = {2–3},
   pages   = {324-328},
+}
+
+@Article{Zhao2017A,
+  author  = {Zhao, Shifei and Ge, Zhihua and He, Jie and Wang, Chunlan and Yang, Yongping and Li, Peifeng},
+  title   = {A novel mechanism for exhaust steam waste heat recovery in combined heat and power unit},
+  journal = {Applied Energy},
+  year    = {2017},
+  volume  = {204},
+  pages   = {596-606},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

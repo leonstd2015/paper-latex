@@ -19,16 +19,25 @@
 			"file": "article.tex",
 			"settings":
 			{
-				"buffer_size": 32221,
+				"buffer_size": 37792,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/User/LaTeXTools.sublime-settings",
+			"file": "article.bbl",
 			"settings":
 			{
-				"buffer_size": 25546,
+				"buffer_size": 2728,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "article.nls",
+			"settings":
+			{
+				"buffer_size": 372,
 				"line_ending": "Unix"
 			}
 		}
@@ -103,6 +112,74 @@
 		[
 			[
 				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"XeLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
 					"Packages/User/c.sublime-build",
 					""
 				],
@@ -121,7 +198,7 @@
 			]
 		]
 	],
-	"build_varint": "",
+	"build_varint": "XeLaTeX",
 	"command_palette":
 	{
 		"height": 200.0,
@@ -133,16 +210,28 @@
 				"Package Control: Install Package"
 			],
 			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: r",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"outline",
+				"Browse Mode: Outline (Left)"
+			],
+			[
 				"bib",
 				"Set Syntax: BibTeX"
 			],
 			[
 				"Package Control: ",
 				"Package Control: Remove Package"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"bibtex",
@@ -157,13 +246,15 @@
 				"Install Package Control"
 			]
 		],
-		"width": 666.0
+		"width": 618.0
 	},
 	"console":
 	{
 		"height": 198.0,
 		"history":
 		[
+			"makeindex article.nlo -s nomencl.ist -o article.nls",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
 			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
@@ -182,15 +273,26 @@
 	],
 	"file_history":
 	[
+		"/C/Users/54933/Documents/Github/article.nls",
+		"/C/Users/54933/Documents/1.tex",
+		"/C/Users/54933/Documents/1.nls",
+		"/C/Users/54933/Desktop/nomenclature.tex",
+		"/C/Users/54933/Desktop/pyson01.py",
+		"/C/Users/54933/Documents/Github/article.tex",
+		"/C/Users/54933/Documents/Github/文章仍旧需要完成的工作",
+		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/User/Python3.sublime-build",
+		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/Outline/outline.sublime-settings",
+		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/User/outline.sublime-settings",
+		"/C/Users/54933/Documents/Github/article.pdf",
+		"/C/Users/54933/Documents/Github/article.bbl",
+		"/c/texlive/2017/texmf-dist/tex/latex/elsarticle/elsarticle.cls",
+		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/User/LaTeXTools.sublime-settings",
 		"/C/Users/54933/Desktop/SimulateBlock7502.m",
 		"/C/Users/54933/Desktop/1.c",
 		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/User/c.sublime-build",
 		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/User/untitled.sublime-build",
 		"/C/Users/54933/Desktop/openpath",
 		"/c/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty",
-		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/User/LaTeXTools.sublime-settings",
-		"/C/Users/54933/Documents/Github/article.pdf",
-		"/C/Users/54933/Documents/Github/article.tex",
 		"/C/Users/54933/Desktop/1/1",
 		"/C/Users/54933/Desktop/1/2",
 		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/main.c",
@@ -206,7 +308,6 @@
 		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/User/latex_equation_preview.sublime-settings",
 		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/LatexEquationPreview/Default (Windows).sublime-keymap",
 		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Cache/LaTeXTools/internal/preview_math/b30eaad4e988bc7e7f95f1307cc6f153.png.err",
-		"/C/Users/54933/Documents/Github/article.bbl",
 		"/C/Users/54933/Desktop/elsarticle/doc/elsdoc.tex",
 		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/latex1.tex"
 	],
@@ -226,6 +327,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"equa",
+			"figure",
+			"关于",
 			"\\item ",
 			"item",
 			"exergy loss",
@@ -257,6 +361,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"Fig.",
 			"exergy destruction",
 			"\\uppercase\\expandafter{\\romannumeral2}",
 			"\\uppercase\\expandafter{\\romannumera2}",
@@ -284,7 +389,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -293,15 +398,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 32221,
+						"buffer_size": 37792,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10251,
-								10251
+								3425,
+								3425
 							]
 						],
 						"settings":
@@ -309,39 +414,68 @@
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4189.0,
+						"translation.y": 4275.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/User/LaTeXTools.sublime-settings",
+					"file": "article.bbl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 25546,
+						"buffer_size": 2728,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9642,
-								9642
+								2728,
+								2728
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4670.0,
+						"translation.y": 1129.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "article.nls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								41,
+								41
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 70.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -388,13 +522,13 @@
 	},
 	"output.latextools":
 	{
-		"height": 181.0
+		"height": 352.0
 	},
-	"pinned_build_system": "",
+	"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 	"project": "article.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 108.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -431,8 +565,8 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 323.0,
+	"side_bar_visible": false,
+	"side_bar_width": 415.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -1,0 +1,18 @@
+\begin{thenomenclature} 
+
+ \nomgroup{C}
+
+  \item [{$E$}]\begingroup The number of angels per unit area\nomeqref {1}
+		\nompageref{10}
+
+ \nomgroup{S}
+
+  \item [{$I$}]\begingroup The area of the needle point\nomeqref {1}
+		\nompageref{10}
+
+ \nomgroup{V}
+
+  \item [{$W$}]\begingroup The number of angels per needle point\nomeqref {1}
+		\nompageref{10}
+
+\end{thenomenclature}

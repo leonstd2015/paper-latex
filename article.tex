@@ -1,14 +1,25 @@
 
 
 \documentclass[preprint,12pt]{elsarticle}
-
-
-
-\usepackage{amssymb,hyperref,booktabs,multirow}
+\usepackage{caption} 
+%\renewcommand{\captionlabeldelim}{.}
+\usepackage{color}%临时添加,
+\usepackage{amssymb,hyperref,booktabs,multirow,multicol,ifthen}
 \usepackage{enumerate}
-
+\usepackage{nomencl}
 \usepackage{float}
 \usepackage{graphics}
+\usepackage{framed}
+
+
+\renewcommand{\nomgroup}[1]
+{%
+\ifthenelse{\equal{#1}{C}}{\item[\textbf{Constants}]}{%
+\ifthenelse{\equal{#1}{V}}{\item[\textbf{Variables}]}{%
+\ifthenelse{\equal{#1}{S}}{\item[\textbf{sets}]}{}}}
+}
+\makenomenclature
+
 % \usepackage{graphicx}%插入图片
 
 % \usepackage{amssymb}%数学符号
@@ -25,6 +36,7 @@
 
 % \usepackage{multirow}%多行合并
 
+
 % \usepackage{caption}%改变图表标题
 
 % \usepackage{array}%调用公式宏包的命令应放在调用宏包命令之前，也能控制表格
@@ -33,7 +45,7 @@
 
 % \usepackage{longtable}%调用跨页表格
 
-% \usepackage{bm}%数学字体加粗
+\usepackage{bm}%数学字体加粗
 
 % \usepackage{setspace}%调整一段文字的行间距
 
@@ -42,11 +54,11 @@
 
 % \allowdisplaybreaks[4]%允许公式跨页
 
-% \captionsetup[figure]{font=small,labelfont=bf,labelsep=period}%修改标题文字格式
+\captionsetup[figure]{font=small,labelfont=bf,labelsep=period}%修改标题文字格式
 
-% \renewcommand{\figurename}{Fig.}%修改标题样式
+\renewcommand{\figurename}{Fig.}%修改标题样式
 
-% \newcommand{\tabincell}[2]{}%让表格内容自动换行，但仍然需要用到换行\\
+%\newcommand{\tabincell}[2]{}%让表格内容自动换行，但仍然需要用到换行\\
 
 \journal{Energy Conversation and Management}
 
@@ -86,12 +98,13 @@ Double reheat \sep Ultra-supercritical power plant \sep Exergy analysis \sep Sys
 \end{frontmatter}
 
 
+\printnomenclature[1.5cm]{}
 
 
 \section{Introduction}
 \label{sec1:intro}
 Coal is still the main fossil fuel resources for electricity production in the world according to~\cite{Ouedraogo2013Energy}. 
-In China, coal –fired power generation accounts for more than 70\% of the total electricity generation and subsequently contribute almost 50\%, 37\%, 33\% and 55\% to the SO$_X$, NO$_X$, dust and CO$_X$ emission volumes respectively~\cite{Zhang2010Analysis}.
+In China, coal–fired power generation accounts for more than 70\% of the total electricity generation and subsequently contribute almost 50\%, 37\%, 33\% and 55\% to the SO$_X$, NO$_X$, dust and CO$_X$ emission volumes respectively~\cite{Zhang2010Analysis}
 Statics show that China has been the largest producer and consumer of energy all over the world since 2013 [??]. 
 For 2016 as a whole, Chinese coal production fell by 7.9\% and the price of steam coal increased by over 60\%[??]. 
 Improve system efficiency and reducing coal consumption is still the main task of power plant design. Nowadays, ultra-supercritical (USC) power plants with large capacity and high parameter are considered to be feasible means to save energy and have rapidly developed word-wide.
@@ -129,7 +142,6 @@ It was found that the SCE consumption can be reduced by 6.7\,g/kWh.
 
 Due to arrangement of boiler heating surface and design of regenerative system belong to deferent research area, researches concentrate more on the optimization of these two systems respectively, and ignored the joint optimization of boiler tail flue heating surface and regenerative system to achieve energy cascade utilization and improve system efficiency.
 To reduce both systems' exergy loses, a theoretical optimization design of cascaded utilization of energy for a 1000\,MW double reheat USC unit (novel system) is proposed. Variations and energy saving effects of a double reheat ultra-supercritical thermal system (reference system) and the novel system are analyzed to evaluate their performance. 
-
 \section{System optimization of double reheat USC system}
 \label{sec2:system intro}
 \subsection{Reference system on operation} % (fold)
@@ -149,15 +161,15 @@ Besides two additional outer steam coolers (AOC1, AOC2) are used to cool two ext
 \end{figure}
 %从参考系统的锅炉虽然仍然采用Π型布置，但其内部受热面和传统一次再热锅炉有较大区别。
 Furnace layout shown in Fig~\ref{fig:boiler_surface}, the boiler furnace is composited by the membrane wall, along flue gas flow direction lays low-temperature superheater (Lts) screen tube, cold segment of high-temperature ﬁrst reheater (Csf), cold segment of high-temperature second reheater (Csf), High temperature super-heater (Hts), hot segment of high-temperature ﬁrst reheater (Hsf), hot segment of high-temperature second reheater (Hss).
-After Hsf and Hss the flue gas channel is divided into the front-duct flue and the back-duct flue. The front duct arranges low-temperature first reheater (Ltfr) and the front-duct economizerz (Feco), the back duct arranges a low-temperature second reheater (Ltsr) and back-duct economizer (Beco). The rear flue is equipped with an air preheater(APH).
-% 从锅炉受热面布置可以看出，锅炉主要受热面布置在炉膛之中，而水平烟道和竖井烟道中仅布置有空气预热设备。所以锅炉可以分成两部分:炉膛内完成水/蒸汽吸热的boiler，和尾部烟道内 完成空气预热的APH。
+After Hsf and Hss the flue gas channel is divided into the front-duct flue and the back-duct flue. The front duct arranges low-temperature first reheater (Ltfr) and the front-duct economizerz (中，而水平烟道和竖井烟道中仅布置有空气预热设备。所以锅炉可以分成两部分:炉膛内完成水/蒸汽吸热的boiler，和尾部烟道内 完成空气预热的APH。
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.5\textwidth]{fig/boiler_surface}
 \caption{Boiler internal heat exchangers layout} 
 \label{fig:boiler_surface}
 \end{figure}
-
+Feco), the back duct arranges a low-temperature second reheater (Ltsr) and back-duct economizer (Beco). The rear flue is equipped with an air preheater(APH).
+% 从锅炉受热面布置可以看出，锅炉主要受热面布置在炉膛之
 
 The main  parameters of the reference system are shown in Table~\ref{tab:ref input}.
 
@@ -180,15 +192,15 @@ Items & Unit & Value\tabularnewline
 \bottomrule
 \end{tabular}	
 \end{table}
-Table 2 gives the temperature profiles and exergy efficiency of regenerative heaters and the air preheater, revealing the energy match level of heat exchangers.
-For the air preheater, the temperature of flue gas at the inlet of the air preheater is 376$^\circ$C under THA condition, while the temperature of the air to be heated by the flue is 25$^\circ$C, leading to the exergy destruction of 27.17\,MW. The temperature difference of the air preheater is calculated to be 72$^\circ$C, and average temperature of the air is 177$^\circ$C, causing the exergy efficiency of 77.16\%.
+Table~\ref{tab:reheater parameter}gives the temperature profiles and exergy efficiency of regenerative heaters and the air preheater, revealing the energy match level of heat exchangers.
+For the air preheater, the temperature of flue gas at the inlet of the air preheater is 376$^\circ$C under THA condition, while the temperature of the air to be heated by the flue is 23$^\circ$C, leading to the exergy destruction of 27.17\,MW. The temperature difference of the air preheater is calculated to be 72$^\circ$C, and average temperature of the air is 177$^\circ$C, causing the exergy efficiency of 77.16\%.
 \begin{table}[htbp]
-\caption{fluid parameters of heat exchangers and air preheater}
+\caption{Fluid parameters of heat exchangers and air preheater}
 \label{tab:reheater parameter}
 \centering
 \begin{tabular}{llll}
 \toprule 
-\multirow{2}{2cm}{Components} &\multirow{2}{2.7cm}{Hot fluid temperature($^\circ$C)}  & \multirow{2}{3.2cm}{Cold fluid temperature ($^\circ$C)}&\multirow{2}{2.5cm}{LMTD ($^\circ$C)}\tabularnewline
+\multirow{2}{2cm}{Components} &\multirow{2}{2.7cm}{Hot fluid temperature($^\circ$C)}  & \multirow{2}{3.2cm}{Cold fluid temperature ($^\circ$C)}&\multirow{2}{2.2cm}{LMTD ($^\circ$C)}\tabularnewline
 &&&\tabularnewline
 \midrule
 APH  &  376.00 	& 23.00  & 72.4\tabularnewline
@@ -213,7 +225,6 @@ However, the inlet temperature difference between the cold and hot stream of oth
 Moreover, because of the material restriction of the water wall, the temperature of feedwater at the inlet of boiler is restricted to 315$^\circ$C. 
 In the reference system, the first extraction has to be throttled to ensure the temperature of feedwater not exceeding the restriction.
 The pressure of the first extraction is throttled from 106.70 bar to 88.56 bar, and the temperature is decreased from 425.60$^\circ$C to 413.77$^\circ$C. The throttling of the first extraction will certainly cause extra irreversible loss.
-%2.2
 \subsection{Proposal of a novel system with EAPH and LPE}
 \label{sub2:prop novel sys}
 
@@ -245,13 +256,15 @@ Part of the condensate and feed water at the inlet of regenerative heater are se
 Considering the acid dew point temperature, the flue gas temperature at the outlet of the last LPE is set 95℃. 
 The temperature of heated water from LPE is set little higher than the feedwater from the corresponding regenerative heater.%
 
-\section{Model establishment and thermodynamic evaluation} % (fold)
-\label{sec3:modle est and eval}
-\subsection{Model description and system analysis method} % (fold)
+% \section{Model establishment and thermodynamic evaluation} % (fold)
+% \label{sec3:modle est and eval}
+\section{Model description and Thermodynamic metric}
 \label{ssub:model_establishment_and_system_analysis_method}
 
-\subsubsection{Model establish method and main assumption}
+\subsection{Model establish method and main assumption}
 \label{ssub3:modle description}
+\textcolor{red}{!novel model established based on the reference which parameters change and which not! }
+%对模型中如何基于现有系统进行的改造，和哪些数据不发生变化进行说明
 In this paper, the thermodynamic cycle of the thermal system under different loads are simulated with EBSILON® Professional for its flexibility and level of detail. 
 EBSILON is a power plant simulation tool which can calculate thermodynamic quantities. 
 The simulation model gives the detailed data with high degree of reliability to calculate the thermodynamic state.
@@ -269,7 +282,7 @@ The following assumptions need to be made in order to be able to simulate correc
 
 
 
-\subsubsection{System analysis method} %(fold)
+\subsection{Thermodynamic metric} %(fold)
 \label{ssub3:analsys method} 
 %为了能够对优化系统与参考系统进行评估，揭示系统优化的内在机理，本文引入热力学第二定律的分析方法即用分析方法。
 Exergy analysis, is adopted to reveal the location, the magnitude and the sources of thermodynamic inefficiencies of the unit.
@@ -279,6 +292,14 @@ The general exergy balance of component can be expressed in the following form:
 \label{equation:1}
 \dot{I}=\sum\dot{E}{}_{in}-\sum\dot{E}{}_{out}+\sum\dot{W}{}_{in}-\sum\dot{W}{}_{out}
 \end{equation}
+\nomenclature[Cp]{$E$}{The number of angels per unit area}%
+
+\nomenclature[Vo]{$W$}{The number of angels per needle point}%
+
+\nomenclature[so]{$I$}{The area of the needle point}%
+
+
+
 Exergy efficiency can be calculated in the following form:
 \begin{equation}
 \label{equation:2}
@@ -300,6 +321,10 @@ The fuel speciﬁc exergy is calculated as[?]:
 e_{fuel}=LHV\left(1.0064+0.1519\frac{H}{C}+0.0616\frac{O}{C}+0.0429\frac{N}{C}\right)
 \end{equation}
 Where LHV refer to lower heating value of fuel, C, H, O, N refer to mass fractions of carbon, hydrogen, oxygen, nitrogen by element analysis.
+More details of exergy  efficiency calculation can be found in Ref~\cite{G2016Exergy}
+
+%系统主要4个子系统和other部分的用损失如何计算，主要提出other包含的内容和反平衡计算方法
+
 \begin{table}
 \caption{Exergy analysis equations for plant components}
 \label{tab:exergy equation}
@@ -313,24 +338,21 @@ Pump & $\dot{I}_{pump}=\dot{E}{}_{in}-\dot{E}{}_{out}+\dot{W}{}_{pump}$ & $\eta_
 Heater & $\dot{I}_{heater}=\dot{E}{}_{in}-\dot{E}{}_{out}$ & $\eta_{\uppercase\expandafter{\romannumeral2},heater}=1-\frac{\dot{I}_{heater}}{\dot{E}{}_{in}}$\tabularnewline
 Turbine & $\dot{I}_{turbine}=\dot{E}{}_{in}-\dot{E}{}_{out}-\dot{W}{}_{el}$ & $\eta_{\uppercase\expandafter{\romannumeral2},turbine}=1-\frac{\dot{I}_{turbine}}{\dot{E}{}_{in}-\dot{E}{}_{out}}$\tabularnewline
 Condenser & $\dot{I}_{condenser}=\dot{E}{}_{in}-\dot{E}{}_{out}+\dot{W}{}_{p}$ & $\eta_{\uppercase\expandafter{\romannumeral2},boiler}=\frac{\dot{E}{}_{out}}{\dot{E}{}_{in}+\dot{W}{}_{p}}$\tabularnewline
-Cycle & $\dot{I}_{cycle}=\sum_{all}\dot{I}_{i}$ & $\eta_{\uppercase\expandafter{\romannumeral2},cycle}=\frac{\dot{W}{}_{net,out}}{\dot{E}{}_{fuel}}$\tabularnewline
+Cycle &$\dot{I}_{cycle}=\dot{E}{}_{fuel}-\dot{W}{}_{net,out}$ & $\eta_{\uppercase\expandafter{\romannumeral2},cycle}=\frac{\dot{W}{}_{net,out}}{\dot{E}{}_{fuel}}$\tabularnewline
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Thermodynamic performance evaluation} % (fold)
+\section{Thermodynamic performance evaluation} % (fold)
 \label{sub:Thermodynamic_evaluation}
-
-\subsubsection{Thermodynamic comparison in design condition}
+%对word版本的分布进行了较大的改动，需要继续调节
+\subsection{Thermodynamic comparison in design condition}
 \label{ssub:desing_compare}
-Based on the analysis of the reference system, the temperature difference of the heat exchangers is very high and exergy efficiency is rather low.
-Using turbine extractions to heat air can realize the reduce the heat transfer temperature difference and improve efficiency. 
-The economizer outlet flue gas is used to heat low-temperature economizer can also reduce the loss of regenerative system.
-% In order to complete the heat balance calculation of the thermodynamic system, the key parameters in the novel system need to be set.
-% The novel system’s parameters are based on reference system, so the main parameters must be the same. The main parameters settled are including: superheat steam’s mass flow, pressure and temperature; First/second reheater’s inlet and outlet pressure and temperature; Turbine Exhaust pressure and temperature; turbine extraction’s pressure and temperature/ specific enthalpy etc. The main parameters settled under THA situation can be found in Table 1 and Table 4 . 
-% 对于新旧系统表格的热力参数进行分析，下面这段话太少
-
-
+%表四
+The comparison of thermal dynamic performance between these two systems is given in Table~\ref{table:thermal performance compare}. 
+Under design condition, the novel system brings an improvement of net generating power by 11.02 MW, and a reduction of SCE consumption by 5.5\,g/kWh.
+The power generation efficiency reaches 48.73\%, 1.04\% higher then that of reference system.
+Meanwhile, the exergy efficiency of novel system is 1.01\% higher, showing good exergy-saving effect. 
 
 \begin{table}
 \caption{Thermodynamic performance of reference and novel systems}
@@ -346,15 +368,15 @@ Addition in generating efficiency (\%) &  & 1.04\tabularnewline
 Standard coal consumption rate (g/kWh) & 257.59 & 252.10\tabularnewline
 Reduction in standard coal consumption rate (g/kWh) &  & 5.49\tabularnewline
 Exergy efficiency (\%) & 46.51 & 47.52\tabularnewline
-Addition in generating efficiency (\%) &  & 1.01\tabularnewline
+Addition in exergy efficiency (\%) &  & 1.01\tabularnewline
 \bottomrule
 \end{tabular}
 \end{table}
 % 根据用损失对比表从新进行分析，从为什么锅炉空预器效率提高，其他不变或者降低说起
-The results of exergy analysis of the optimization system are presented in Table~\ref{table:system exergy campare}. 
-It is found that the optimization system has an improvement in exergetic performance.
- The total exergy destruction of the cascaded utilization system is 1096.52 MW, which is 32.28 MW lower than the original. 
- The new system also brings the improvement from 46.98\% to 47.99\%. 
+Table~\ref{table:system exergy campare} gives the results of subsystem exergy analysis of the two system. 
+It is found that the novel system has an improvement in exergetic performance by an decrease of 10.82\,MW of total exergy destruction rate.
+Exergy destruction rate of boiler accounts for the highest proportion and decrease most (11.04\,MW).
+Air preheat subsystem's exergy destruction rate of novel system changes from 27.39\,MW to 16.55\,MW, having a 10.84\,MW decreasmen
  Results show that the exergy destruction of boiler is 855.72 MW, leading to the increment of exergy efficiency by 0.18\%. In addition, there is almost no change of the exergy parameters of the steam turbines, generator and condenser. 
  For the air heating system and regenerative system, great change happens compared with the formal system, and detailed analysis will be carried out next.
 
@@ -373,8 +395,8 @@ Items & Reference System\,(MW) & Novel System\,(MW)\tabularnewline
 \midrule 
 Boiler(without AP) & 883.26 & 872.22\tabularnewline
 Turbine & 63.33 & 63.97\tabularnewline
-Air Preheater  & 27.39 & 16.55\tabularnewline
-Regenerative system & 22.53 & 21.56\tabularnewline
+Air preheat subsystem  & 27.39 & 16.55\tabularnewline
+Regenerative subsystem & 22.53 & 21.56\tabularnewline
 Other & 131.03 & 142.42 \tabularnewline
 Total & 1116.72 & 1127.54\tabularnewline
 \bottomrule
@@ -384,8 +406,8 @@ Total & 1116.72 & 1127.54\tabularnewline
 
 
 \begin{table}
-\label{table:extraction compare}
 \caption{Extractions comparison of reference and novel systems}
+\label{table:extraction_compare}
 \begin{centering}
 \begin{tabular}{llll}
 \toprule 
@@ -409,18 +431,23 @@ Total & 282.97 & 176.14 & 106.49\tabularnewline
 \par\end{centering}
 \end{table}
 % 下面两段话需要根据图修改
-%对于新系统优化可二次再热后蒸汽的抽汽，使8th抽汽量增加
-The variation of mass flow rate of extractions is presented in Fig 6.
- Mass flow rate of the 1st, 3rd, 5th and 8th extractions of the optimization system is more than that of the base model, and the rest extractions except the last two, has the opposite variation. 
+
+%本文是针对空预系统和回热系统的联合优化改造，所以本文将新系统和参考系统中的差变化，系统中设备的效率和用损变化进行了分析。
+The variation of mass flow rate of extractions is presented in Table~\ref{table:extraction_compare}.
+Mass flow rate of the 1st, 3rd, 5th and 8th extractions of the optimization system is more than that of the base model, and the rest extractions except the last two, has the opposite variation. 
  The impact of system optimization on extraction is twofold. 
  Air is heated by extractions, which will cause an increment in mass flow. 
- And the use of LPE can saves extractions.so the total extraction keeps unchanged.
- Turbine total extraction steam volume change affect its exergy efficiency by 2.03\%.
+ And the use of LPE can saves extractions.
+ so the total extraction mass flow keeps almost unchanged.
+%新系统优化可二次再热后蒸汽的抽汽，使8th抽汽量增加
 
 The air is heated by the staged air preheaters and additional outer steam coolers in the cascaded utilization system.
- It can be seen from Table 5 that the total exergy destruction of the air heating system is 16.35 MW, 10.82 MW lower than that of the original air preheater which is 27.17 MW. 
- Fig 7 shows that the exergy efficiency of APHs and AOCs is higher than 82\%, except APH8.
- For the air preheaters, the improvement in performance results from more reasonable energy utilization and the heat transform method. 
+It can be seen from Table 5 that the total exergy destruction of the air heating system is 16.35 MW, 10.82 MW lower than that of the original air preheater which is 27.17\,MW. 
+
+%插入对QT图的解释和分析
+
+Fig.~\ref{fig:APH_temper_compare} shows that the exergy efficiency of APHs and AOCs is higher than 82\%, except APH8.
+For the air preheaters, the improvement in performance results from more reasonable energy utilization and the heat transform method. 
  In the conventional air preheater, the air is heated by high temperature flue gas through convection. 
  The working principle of the staged air preheaters in the optimization system is the same as regenerative heaters. 
  The superheated vapor is firstly cooled to saturated steam through convection, then to saturated water through phase change heat transfer, and the latter process accounts for the main part. 
@@ -439,6 +466,13 @@ The air is heated by the staged air preheaters and additional outer steam cooler
 \caption{Exergy destruction and efficiency of air preheat subsystem of novel system} 
 \label{fig:novel_APH_exergy}
 \end{figure}
+%插入对于回热系统的分析
+
+% The total exergy loss of the LPEs is 10.73MW, and the overall exergy efficiency is 91.62%, much higher than that of air preheater. As shown in Fig.6, the temperature difference of the LPEs is between 23 ℃ to 42 ℃, less than that of the original air preheater. The LPE1 and LPE4 have the greatest exergy loss of all the LPEs, which mainly results from their great heat transfer rate. Besides the exergetic performance of the LPEs keeps falling along the flow direction of flue gas. This is because the higher temperature of the cold stream, the greater exergy efficiency, for the temperature difference changes little in heat transfer process.
+% The layout of the optimization system also changes the exergetic performance of regenerative heaters, shown in Fig.7. The total exergy loss of regenerative heaters is 11.60 MW, which is greatly reduced compared with that of the base model. On the one hand, owing to the heat injected by flue gas, less extracted steam is needed for the HRH2, HRH4, LRH6, and LRH8 which are paralleled with LPEs, which causes less exergy loss of corresponding regenerative heater. On the other hand, the LPEs heat condensate and feedwater to higher temperature level than the regenerative heaters, leading to less heat transfer rate of HRH1, HRH3, DEA and LRH7, which will also reduce the exergy loss. 
+%There are three factors causing the improvement in exergetic performance. Firstly, for HRH1, HRH3, DEA and LRH7, due to higher temperature level of the water from LPE, the exergy of the inlet feedwater e_(c,i) increases, leading to the efficiency improvement. Secondly, the installation of AOCs causes the reduction of the superheat degree of the extracted steam entering the HRH3 and DEA, and reduce its exergy, namely e_(h,i). At last, compared the original regenerative heaters, an extral part of drainage from corresponding air preheater of optimization system is used to heat the feedwater. Compared with the extracted steam, the drainage from air preheaters has lower exergy, which reduce the irreversible loss to some extent.
+
+
 
 \begin{figure}[htbp]
 \centering
@@ -455,33 +489,59 @@ The air is heated by the staged air preheaters and additional outer steam cooler
 \caption{Exergy efficiency and LMTD of LPEs} 
 \label{fig:LPE_exergy_LMDT}
 \end{figure}
+%对锅炉、汽轮机、和other系统的用效率进行分析
 
-
-\subsubsection{Thermodynamic comparison in off-design conditions}
+\subsection{Thermodynamic comparison in off-design conditions}
 \label{ssub:0ffdesing_compare}
+Considering that large USC power plants' operation under partial load conditions, it is necessary to study the thermal performance of double reheat USC power plants under off-design conditions.
+Four typical operation conditions, THA load, 75\% THA load, 50\% THA load, and 40\% THA load conditions, were chosen for thermodynamic analyses. 
+Fig.~\ref{fig:partload_efficiency} shows novel and reference systems' exergy efficiency under different load conditions.The exergy efficiencies of both systems decrease as the load decrease.
+The exergy efficiencies of both systems are 47.52\% and 46.51\% under THA load condition. Compared with reference system, novel system's exergy efficiency has the increment of 1.01 percentage points, and reduces SCE consumption by 5.5\,g/kWh.
+Under the 75\% THA condition, the optimized system was 46.56\% and the reference system was 45.90\%, the exergy
+efficiency decrease to 0.66\%. 
+When the load is equal to 50\% THA, the efficiency difference is 0.43\%.
+This implies that the novel system can increase exergy efficiency under partial load, but it has more advantages for double reheat power plant undertaking base load.
+
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.6\textwidth]{fig/partload_efficiency.png}
 \caption{Exergy efficiency comparison in off-design conditions} 
 \label{fig:partload_efficiency}
 \end{figure}
+  exergy destruction ratio (y$_{D}$) is used to measure the exergy destruction of 1\,MW power generation of unit by a subsystem, and its calculate formula is as follow:
+\begin{equation}
+y_{D}=\frac{\dot{I}}{P}
+\end{equation}
+
+% 用损率差大表明该子系统的节能效果更显著，同时对整个系统的节能效果贡献更大。
+% 由图10可以得到新系统引起节能效果从大到小依次为：锅炉、空预系统、回热系统和汽轮机。
+% 当负荷从THA逐渐降低可以看到，降负荷对锅炉影响最大，而负荷变化对汽轮机系统影响接近于零。
+% 负荷降低到40%，四个子系统优化效果虽然降低但累计值依然优于参考系统，但由于符合降低引起的oher系统用损失的升高导致优化系统相对与参考系统效率增加为0.01%，几乎没有优化效果
+% 同时需要指出，由于锅炉本身的用损失很大，所以变负荷对锅炉本身用效率影响很小,而对空预子系统的影响较大。
+A large exergy destruction ratio value indicates that the subsystem has more significant energy-saving effects and contributes more to the exergy-saving effect of the entire system.
+Fig.~\ref{fig:partload_subsys_exergyrate} shows the  exergy destruction ratio difference ($y_{D,refere}-y_{D,novel}$) between reference system and novel system.
+It indicates that the contribution of energy-saving effect decrease as follows: the boiler, air preheat subsystem, regenerative subsystem and steam turbine.
+As the load decreases from THA load condition, it can be seen that the load change has the greatest effect on the boiler, while the change of load condition barely affects the steam turbine.
+While the load is reduced to 40\%THA, the four subsystems of the novel system are still have lower exergy destruction rate than those of the reference system.
+However the calculated value of these subsystem decrease and exergy destruction rate increase of other uncalculated components make the novel system's exergy-saving effect decrease.
+According to the data of Table~\ref{table:system exergy campare}, it should be pointed out that due to the great exergy destruction of the boiler, the decrease of load has little effect on the exergy efficiency of it.But the air preheat subsystem is most effected.
+
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.6\textwidth]{fig/partload_subsys_exergyrate.png}
-\caption{Exergy destruction rate difference of subsystems in off-design conditions} 
+\caption{!!!!Exergy destruction rate difference of subsystems in off-design conditions!!!!} 
 \label{fig:partload_subsys_exergyrate}
 \end{figure}
 
 % subsubsection subsubsection_name (end)
 
 \section{Conclusion}
-This study presents an optimization design of cascaded utilization of energy for a 1000 MW double reheat ultra-supercritical unit.
- Thermodynamic analysis is conducted to reveal the comprehensive effects of the optimization measures. 
- The optimization system is found to be effective in overcoming the imperfections, and may provide an effective method for the optimization of a double reheat system in USC unit.
-  The following conclusions are drawn from this study: 
-
-
+%文章干了什么
+\textcolor{red}{This study presents an optimization design of cascaded utilization of energy for a 1000 MW double reheat ultra-supercritical unit.}
+Thermodynamic analysis is conducted to reveal the comprehensive effects of the optimization measures. 
+The optimization system is found to be effective in overcoming the imperfections, and may provide an effective method for the optimization of a double reheat system in USC unit.
+The following conclusions are drawn from this study: 
  \begin{enumerate}[(1)]
 \item The thermodynamic analysis indicates that the cascaded utilization system decreases the temperature difference of in air heating and flue gas cooling process which achieves the cascaded utilization of energy, and the superheat degree of the 3rd and 5th is reduced greatly. 
 Besides, more exhaust heat of the flue gas is recovered since the LPE cools the flue gas to lower temperature. 
