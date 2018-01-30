@@ -1,18 +1,22 @@
 \begin{thenomenclature} 
 
- \nomgroup{C}
+ \nomgroup{A}
 
-  \item [{$E$}]\begingroup The number of angels per unit area\nomeqref {1}
-		\nompageref{10}
+  \item [{AOC}]\begingroup additional outer steam cooler\nomeqref {6}
+		\nompageref{19}
+  \item [{USC}]\begingroup ultra-supercritical\nomeqref {6}
+		\nompageref{19}	
+ \item [{LPE}]\begingroup low pressure economizer\nomeqref {6}
+		\nompageref{19} 
+\item [{EAPH}]\begingroup turbine-extraction-heated air preheater\nomeqref {6}
+		\nompageref{19}
+ \nomgroup{M}
+
+  \item [{$\dot{I}$}]\begingroup Exergy destruction rate (MW)\nomeqref {6}\nompageref{19}
 
  \nomgroup{S}
 
-  \item [{$I$}]\begingroup The area of the needle point\nomeqref {1}
-		\nompageref{10}
-
- \nomgroup{V}
-
-  \item [{$W$}]\begingroup The number of angels per needle point\nomeqref {1}
-		\nompageref{10}
+  \item [{$in$}]\begingroup inlet\nomeqref {6}\nompageref{19}
+  \item [{$out$}]\begingroup outlet\nomeqref {6}\nompageref{19}
 
 \end{thenomenclature}

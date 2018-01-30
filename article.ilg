@@ -7,8 +7,8 @@ Scanning style file c:/texlive/2017/texmf-dist/makeindex/nomencl/nomencl.ist....
 ** Input style error (file = c:/texlive/2017/texmf-dist/makeindex/nomencl/nomencl.ist, line = 72):
    -- Unknown specifier lethead_flag.
 ...done (10 attributes redefined, 3 ignored).
-Scanning input file article.nlo....done (3 entries accepted, 0 rejected).
-Sorting entries....done (5 comparisons).
-Generating output file article.nls....done (18 lines written, 0 warnings).
+Scanning input file article.nlo....done (4 entries accepted, 0 rejected).
+Sorting entries....done (10 comparisons).
+Generating output file article.nls....done (17 lines written, 0 warnings).
 Output written in article.nls.
 Transcript written in article.ilg.

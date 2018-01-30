@@ -1,3 +1,4 @@
-\nomenclatureentry{Cp$E$@[{$E$}]\begingroup The number of angels per unit area\nomeqref {1}|nompageref}{10}
-\nomenclatureentry{Vo$W$@[{$W$}]\begingroup The number of angels per needle point\nomeqref {1}|nompageref}{10}
-\nomenclatureentry{so$I$@[{$I$}]\begingroup The area of the needle point\nomeqref {1}|nompageref}{10}
+\nomenclatureentry{M$\dot{I}$@[{$\dot{I}$}]\begingroup Exergy destruction rate (MW)\nomeqref {6}|nompageref}{19}
+\nomenclatureentry{S$in$@[{$in$}]\begingroup inlet\nomeqref {6}|nompageref}{19}
+\nomenclatureentry{S$out$@[{$out$}]\begingroup outlet\nomeqref {6}|nompageref}{19}
+\nomenclatureentry{aAOC@[{AOC}]\begingroup additional outer steam cooler\nomeqref {6}|nompageref}{19}
