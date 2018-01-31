@@ -19,7 +19,16 @@
 			"file": "article.tex",
 			"settings":
 			{
-				"buffer_size": 37792,
+				"buffer_size": 37637,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "文章仍旧需要完成的工作",
+			"settings":
+			{
+				"buffer_size": 193,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -37,7 +46,8 @@
 			"file": "article.nls",
 			"settings":
 			{
-				"buffer_size": 372,
+				"buffer_size": 657,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -198,7 +208,7 @@
 			]
 		]
 	],
-	"build_varint": "XeLaTeX",
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 200.0,
@@ -327,6 +337,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"nomenc",
 			"equa",
 			"figure",
 			"关于",
@@ -398,15 +409,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 37792,
+						"buffer_size": 37637,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3425,
-								3425
+								21979,
+								21979
 							]
 						],
 						"settings":
@@ -414,7 +425,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4275.0,
+						"translation.y": 8343.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -422,6 +433,34 @@
 				},
 				{
 					"buffer": 1,
+					"file": "文章仍旧需要完成的工作",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								193,
+								193
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "article.bbl",
 					"semi_transient": false,
 					"settings":
@@ -444,27 +483,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1129.0,
+						"translation.y": 557.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "article.nls",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 372,
+						"buffer_size": 657,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								41,
-								41
+								459,
+								459
 							]
 						],
 						"settings":
@@ -472,7 +511,7 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 70.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -522,7 +561,7 @@
 	},
 	"output.latextools":
 	{
-		"height": 352.0
+		"height": 190.0
 	},
 	"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 	"project": "article.sublime-project",

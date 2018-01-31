@@ -236,15 +236,15 @@ The pressure of the first extraction is throttled from 106.70 bar to 88.56 bar, 
 \subsection{Proposal of a novel system with EAPH and LPE}
 \label{sub2:prop novel sys}
 %添加为什么进行这种设计的解释，为什么设置LPE AOC APH的级数
-The  layout of the optimization system is presented in Fig~\ref{fig:novel_system}.
-In the optimization system, the air is not heated by flue gas in the conventional air preheater, and 8 new air preheaters (APH1\-APH8) using several extractions to heat the air is adopted.
+\textcolor{red}{The  layout of the optimization system is presented in Fig~\ref{fig:novel_system}.
+In the optimization system, the air is not heated by flue gas in the conventional air preheater, and 8 new air preheaters (APH1\~APH8) using several extractions to heat the air is adopted.
 The new air preheater is similar with regenerative heaters in function.
 As shown in Fig~ the extracted steam is sent to the regenerative heater to heat the condensate or feedwater, and then the drainage from the air preheater joins with that of corresponding regenerative heater.
 It should be mentioned that not all the extractions are available for air heating
 For the last two stage extractions, their pressure is much lower than barometric pressure which makes it extremely difficult to maintain such low pressure environment inside the heat exchangers, and APH8 shall be shut down under low load for the same reason.
 Besides, to reduce the superheat degree of extractions entering the heat exchangers and to improve the air temperature, four additional outer steam coolers (AOC1- AOC4) are installed at the outlet of APH1.
 Since extractions from the 2nd to the 5th have superheat degree, they are sent to AOCs in the order of temperature level.
-For example, the 2nd extraction has the highest temperature, and is applied to heat the air in the 1st AOC, and then the cooled steam from AOC1 is sent to HRH2 and air APH2 to heat the water and air respectively.   
+For example, the 2nd extraction has the highest temperature, and is applied to heat the air in the 1st AOC, and then the cooled steam from AOC1 is sent to HRH2 and air APH2 to heat the water and air respectively. }   
 
 \begin{figure}[htbp]
 \centering
@@ -261,7 +261,7 @@ For example, the 2nd extraction has the highest temperature, and is applied to h
 \end{figure}
 As shown in Fig~\ref{fig:novel_system}, the flue gas at the outlet of economizer is utilized to heat the condensate and feed water by four LPEs, which are paralleled to HRH2, HRH4, LRH6, and LRH8 respectively. 
 Part of the condensate and feed water at the inlet of regenerative heater are sent to the LPE, then the heated water join with the main feedwater/condensate. 
-Considering the acid dew point temperature, the flue gas temperature at the outlet of the last LPE is set 95℃. 
+Considering the acid dew point temperature, the flue gas temperature at the outlet of the last LPE is set 95$^	rc$C. 
 The temperature of heated water from LPE is set little higher than the feedwater from the corresponding regenerative heater.%
 
 % \section{Model establishment and thermodynamic evaluation} % (fold)
@@ -299,7 +299,7 @@ Usually, exergy destruction and exergy efficiency are chosen as evaluation indic
 The general exergy balance of component can be expressed in the following form:
 \begin{equation}
 \label{equation:1}
-\dot{I}=\sum\dot{E}{}_{in}-\sum\dot{E}{}_{out}+\sum\dot{W}{}_{in}-\sum\dot{W}{}_{out}
+\dot{I}=\sum\dot{X}{}_{in}-\sum\dot{X}{}_{out}+\sum\dot{W}{}_{in}-\sum\dot{W}{}_{out}
 \end{equation}
 
 
@@ -309,27 +309,9 @@ The general exergy balance of component can be expressed in the following form:
 Exergy efficiency can be calculated in the following form:
 \begin{equation}
 \label{equation:2}
-\eta=\frac{\dot{E}{}_{earned}}{\dot{E}{}_{cost}}
+\eta=\frac{\dot{X}{}_{earned}}{\dot{X}{}_{cost}}
 \end{equation}
-For different equipment under stable operating conditions, equation~\ref{equation:1}~\ref{equation:2} have different forms as shown in Table~\ref{tab:exergy equation}~\cite{Aljundi2009Energy}
-For flue gas, air, water and steam, the specific exergy can be calculated by equation~\ref{equation:3}.
-
-\begin{equation}{}
-\label{equation:3}
-e=h-h_{0}-T_{0}\left(s-s_{0}\right)
-\end{equation}
-Then the total exergy rate associated with ﬂuid stream becomes:
-\begin{equation}
-\dot{E}=\dot{m}e=\dot{m}\left[h-h_{0}-T_{0}\left(s-s_{0}\right)\right]{}
-\end{equation}
-The fuel speciﬁc exergy is calculated as[?]: 
-\begin{equation}
-e_{fuel}=LHV\left(1.0064+0.1519\frac{H}{C}+0.0616\frac{O}{C}+0.0429\frac{N}{C}\right)
-\end{equation}
-Where LHV refer to lower heating value of fuel, C, H, O, N refer to mass fractions of carbon, hydrogen, oxygen, nitrogen by element analysis.
-More details of exergy  efficiency calculation can be found in Ref~\cite{G2016Exergy}
-
-%系统主要4个子系统和other部分的用损失如何计算，主要提出other包含的内容和反平衡计算方法
+For different equipment under stable operating conditions, equation~\ref{equation:1}, ~\ref{equation:2} have different forms as shown in Table~\ref{tab:exergy equation}~\cite{Aljundi2009Energy}
 
 \begin{table}
 \caption{Exergy analysis equations for plant components}
@@ -339,15 +321,47 @@ More details of exergy  efficiency calculation can be found in Ref~\cite{G2016Ex
 \toprule 
  & Exergy destruction rate  & Exergy efficiency\tabularnewline
 \midrule
-Boiler & $\dot{I}_{boiler}=\dot{E}{}_{fuel}+\dot{E}{}_{in}-\dot{E}{}_{out}$ & $\eta_{\uppercase\expandafter{\romannumeral2},boiler}=\frac{\dot{E}{}_{out}-\dot{E}{}_{in}}{\dot{E}{}_{fuel}}$\tabularnewline
-Pump & $\dot{I}_{pump}=\dot{E}{}_{in}-\dot{E}{}_{out}+\dot{W}{}_{pump}$ & $\eta_{\uppercase\expandafter{\romannumeral2},pump}=1-\frac{\dot{I}_{pump}}{\dot{W}{}_{pump}}$\tabularnewline
-Heater & $\dot{I}_{heater}=\dot{E}{}_{in}-\dot{E}{}_{out}$ & $\eta_{\uppercase\expandafter{\romannumeral2},heater}=1-\frac{\dot{I}_{heater}}{\dot{E}{}_{in}}$\tabularnewline
-Turbine & $\dot{I}_{turbine}=\dot{E}{}_{in}-\dot{E}{}_{out}-\dot{W}{}_{el}$ & $\eta_{\uppercase\expandafter{\romannumeral2},turbine}=1-\frac{\dot{I}_{turbine}}{\dot{E}{}_{in}-\dot{E}{}_{out}}$\tabularnewline
-Condenser & $\dot{I}_{condenser}=\dot{E}{}_{in}-\dot{E}{}_{out}+\dot{W}{}_{p}$ & $\eta_{\uppercase\expandafter{\romannumeral2},boiler}=\frac{\dot{E}{}_{out}}{\dot{E}{}_{in}+\dot{W}{}_{p}}$\tabularnewline
-Cycle &$\dot{I}_{cycle}=\dot{E}{}_{fuel}-\dot{W}{}_{net,out}$ & $\eta_{\uppercase\expandafter{\romannumeral2},cycle}=\frac{\dot{W}{}_{net,out}}{\dot{E}{}_{fuel}}$\tabularnewline
+Boiler & $\dot{I}_{boiler}=\dot{X}{}_{fuel}+\dot{X}{}_{in}-\dot{X}{}_{out}$ & $\eta_{\uppercase\expandafter{\romannumeral2},boiler}=\frac{\dot{X}{}_{out}-\dot{X}{}_{in}}{\dot{X}{}_{fuel}}$\tabularnewline
+Pump & $\dot{I}_{pump}=\dot{X}{}_{in}-\dot{X}{}_{out}+\dot{W}{}_{pump}$ & $\eta_{\uppercase\expandafter{\romannumeral2},pump}=1-\frac{\dot{I}_{pump}}{\dot{W}{}_{pump}}$\tabularnewline
+Heater & $\dot{I}_{heater}=\dot{X}{}_{in}-\dot{X}{}_{out}$ & $\eta_{\uppercase\expandafter{\romannumeral2},heater}=1-\frac{\dot{I}_{heater}}{\dot{X}{}_{in}}$\tabularnewline
+Turbine & $\dot{I}_{turbine}=\dot{X}{}_{in}-\dot{X}{}_{out}-\dot{W}{}_{el}$ & $\eta_{\uppercase\expandafter{\romannumeral2},turbine}=1-\frac{\dot{I}_{turbine}}{\dot{X}{}_{in}-\dot{X}{}_{out}}$\tabularnewline
+Condenser & $\dot{I}_{condenser}=\dot{X}{}_{in}-\dot{X}{}_{out}+\dot{W}{}_{p}$ & $\eta_{\uppercase\expandafter{\romannumeral2},boiler}=\frac{\dot{X}{}_{out}}{\dot{X}{}_{in}+\dot{W}{}_{p}}$\tabularnewline
+Cycle &$\dot{I}_{total}=\dot{X}{}_{fuel}-\dot{W}{}_{net,out}$ & $\eta_{\uppercase\expandafter{\romannumeral2},total}=\frac{\dot{W}{}_{net,out}}{\dot{X}{}_{fuel}}$\tabularnewline
 \bottomrule
 \end{tabular}
 \end{table}
+
+For flue gas, air, water and steam, the specific exergy can be calculated by equation~\ref{equation:3}.
+
+\begin{equation}{}
+\label{equation:3}
+x=h-h_{0}-T_{0}\left(s-s_{0}\right)
+\end{equation}
+Then the total exergy rate associated with ﬂuid stream becomes:
+\begin{equation}
+\dot{X}=\dot{m}e=\dot{m}\left[h-h_{0}-T_{0}\left(s-s_{0}\right)\right]{}
+\end{equation}
+The fuel specific exergy calculate method~\cite{Yan2016The} can be expressed as.
+\begin{equation}
+x_{fuel}=LHV\left(1.0064+0.1519\frac{H}{C}+0.0616\frac{O}{C}+0.0429\frac{N}{C}\right)
+\end{equation}
+Where LHV refer to lower heating value of fuel, C, H, O, N refer to mass fractions of carbon, hydrogen, oxygen, nitrogen by element analysis.
+More details of power plant equipments' exergy  efficiency calculation can be found in Ref~\cite{G2016Exergy}
+
+In order to clearly analyze the effect of system optimization, this paper divides the double-reheat USC system into four main subsystems and a sum of all other equipments, valves and pips named "other".
+The four main subsystems are boiler with out APH, turbines, air preheat subsystem, regenerative subsystem.
+The equations mentioned above can also be used into of exergy analysis these four main subsystems.
+For the "other" part, this paper used counter balance analysis method to calculate its exergy destruction rate, which means subtract the share of the four main subsystems from the total.
+ The exergy destruction rate can be calculated by using equation as follows:
+
+\begin{equation}
+\dot{I}_{other}=\dot{I}{}_{total}-\sum\dot{I}{}_{subsystems}
+\end{equation}
+
+
+%系统主要4个子系统和other部分的用损失如何计算，主要提出other包含的内容和反平衡计算方法
+
+
 
 \section{Thermodynamic performance evaluation} % (fold)
 \label{sub:Thermodynamic_evaluation}
@@ -386,9 +400,7 @@ Air preheat subsystem's exergy destruction rate changes from 27.39\,MW to 16.55\
 In the mean time, turbines and regenerative subsystem have a relatively small change at about 1\,MW. 
 
 The item "other" of novel system is higher then reference system, showing that the uncalculated components of systems have a increment of exergy destruction rate.
-Among the uncalculated components, the pips' amount increasing and work fluid mixing with parameters not match are the mainly reason why that party has a increment in exergy destruction rate.
-
-
+Among the uncalculated components, the pips' amount increasing and work fluid mixing with parameters not match are the mainly reason why that part has a increment in exergy destruction rate.
 
 \begin{table}
 \caption{Exergy destruction rate comparison of reference and novel systems }
@@ -408,8 +420,18 @@ Total & 1116.72 & 1127.54\tabularnewline
 \end{tabular}
 \end{table}
 
+% 下面两段话需要根据图修改
 
+%本文是针对空预系统和回热系统的联合优化改造，所以本文将新系统和参考系统中的差变化，系统中设备的效率和用损变化进行了分析。
+To conduct in-depth analysis of both systems, research of the mainly optimized subsystems, air preheat subsystem and regenerative subsystem was conducted.
+Table~\ref{table:extraction_compare} gives the variation of mass flow rate of extractions.
+As illustrated in Table~\ref{table:extraction_compare}, mass flow rate of the 1st, 3rd, 5th and 8th extractions of the novel system is more than that of the reference system, and the rest extractions except the last two, has the opposite variation. 
+It can be found that the impact of system optimization on extraction is twofold: air is heated by extractions, which will cause an increment in mass flow, and the use of LPE can saves extractions so the total extraction mass flow keeps almost unchanged.
 
+The sum of 4th to 10th extractions mass flow increases from 138.46 kg/s to 145.07 kg/s, and the 8th extraction increase 13.9 kg/s.
+The mass flow increase of low pressure extractions implies that novel system can modify the quantity distribution of extractions.
+
+%新系统优化可二次再热后蒸汽的抽汽，使8th抽汽量增加
 \begin{table}
 \caption{Extractions comparison of reference and novel systems}
 \label{table:extraction_compare}
@@ -435,28 +457,18 @@ Total & 282.97 & 176.14 & 106.49\tabularnewline
 \end{tabular}
 \par\end{centering}
 \end{table}
-% 下面两段话需要根据图修改
 
-%本文是针对空预系统和回热系统的联合优化改造，所以本文将新系统和参考系统中的差变化，系统中设备的效率和用损变化进行了分析。
-The variation of mass flow rate of extractions is presented in Table~\ref{table:extraction_compare}.
-Mass flow rate of the 1st, 3rd, 5th and 8th extractions of the optimization system is more than that of the base model, and the rest extractions except the last two, has the opposite variation. 
- The impact of system optimization on extraction is twofold. 
- Air is heated by extractions, which will cause an increment in mass flow. 
- And the use of LPE can saves extractions.
- so the total extraction mass flow keeps almost unchanged.
-%新系统优化可二次再热后蒸汽的抽汽，使8th抽汽量增加
-
-The air is heated by the staged air preheaters and additional outer steam coolers in the cascaded utilization system.
-It can be seen from Table 5 that the total exergy destruction of the air heating system is 16.35 MW, 10.82 MW lower than that of the original air preheater which is 27.17\,MW. 
 
 %插入对QT图的解释和分析
-
-Fig.~\ref{fig:APH_temper_compare} shows that the exergy efficiency of APHs and AOCs is higher than 82\%, except APH8.
-For the air preheaters, the improvement in performance results from more reasonable energy utilization and the heat transform method. 
- In the conventional air preheater, the air is heated by high temperature flue gas through convection. 
- The working principle of the staged air preheaters in the optimization system is the same as regenerative heaters. 
- The superheated vapor is firstly cooled to saturated steam through convection, then to saturated water through phase change heat transfer, and the latter process accounts for the main part. 
- In this case, the temperature difference is greatly reduced, causing the improvement in performance.
+Air is heated by the EAPHs and AOCs in novel system from 23$^\circ$C to 363.33$^\circ$C. 
+A majority of outlet air of EAPH6 is send to miler as primary air, and rest of air is heated to 363.33$^\circ$C.
+Fig.~\ref{fig:APH_temper_compare} shows air preheat process' temperature difference between hot and cold fluid of novel and reference systems.
+The red triangle and red hollow triangle instead for steam average temperature of EAPH and AOC. 
+In order to simplify the diagram, using saturate temperature of steam instead of EAPH's average temperature and using mean value of inlet and outlet temperature as AOC's average temperature.
+The figure indicates that  temperature difference of EAPHs is lower than that of APH, which makes exergy efficiency's improvement.
+The AOCs' temperature difference is high, but heat exchange is relatively small and so does the exergy destruction. 
+So the air preheat subsystem  of novel system has a smaller exergy destruction rate and improvement on exergy efficiency.
+One the other hand, The total heat exchange  and secondary air temperature of novel system is higher then these of reference system, which make the boiler's exergy efficiency's improvement.
 
 \begin{figure}[htbp]
 \centering
@@ -465,15 +477,23 @@ For the air preheaters, the improvement in performance results from more reasona
 \label{fig:APH_temper_compare}
 \end{figure}
 % 在空气预热开始时，在第8级空预器出换热量和换热温差均较大，使之成为用损最大的换热器，随着空气预热的继续进行，换热温差降低，低1-7级空预器的用损减小。当空气进入AOC时，由于抽汽温度较高，所以换热温差增大，但由于换热量较小，造成在AOC中的用损失较小。
+
+Fig.~\ref{fig:APH_temper_compare} shows EAPHs and AOCs's exergy analysis results. 
+Except EAPH8，the exergy efficiency of EAPHs and AOCs is higher than 82\%, and the APH8 has the greatest exergy loss and lowest efficiency of all the air preheaters. 
+It also indicates that, although the AOCs have large heat transfer temperature difference, their exergy efficiencies are still high and low exergy destruction rate, which have less impact on the total exergy efficiency.
+Combing Fig.~\ref{fig:APH_temper_compare} andFig.~\ref{fig:novel_APH_exergy},the reason why the novel system's air preheat subsystem have a higher exergy efficiency and lower exergy destruction rate can be drawn.
+For the novel system's air preheat subsystem, the improvement in performance results from lower heat transfer temperature difference and reasonable extractions' superheat degree using.
+
+
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{fig/novel_APH_exergy.png}
-\caption{Exergy destruction and efficiency of air preheat subsystem of novel system} 
+\caption{Exergy destruction and efficiency of air preheat subsystem of novel system} %图中的纵坐标需要修改
 \label{fig:novel_APH_exergy}
 \end{figure}
 %插入对于回热系统的分析
 
-% The total exergy loss of the LPEs is 10.73MW, and the overall exergy efficiency is 91.62%, much higher than that of air preheater. As shown in Fig.6, the temperature difference of the LPEs is between 23 ℃ to 42 ℃, less than that of the original air preheater. The LPE1 and LPE4 have the greatest exergy loss of all the LPEs, which mainly results from their great heat transfer rate. Besides the exergetic performance of the LPEs keeps falling along the flow direction of flue gas. This is because the higher temperature of the cold stream, the greater exergy efficiency, for the temperature difference changes little in heat transfer process.
+% The total exergy loss of the LPEs is 10.73MW, and the overall exergy efficiency is 91.62%, much higher than that of air preheater. As shown in Fig.6, the temperature difference of the LPEs is between 23 $^	rc$C to 42 $^	rc$C, less than that of the original air preheater. The LPE1 and LPE4 have the greatest exergy loss of all the LPEs, which mainly results from their great heat transfer rate. Besides the exergetic performance of the LPEs keeps falling along the flow direction of flue gas. This is because the higher temperature of the cold stream, the greater exergy efficiency, for the temperature difference changes little in heat transfer process.
 % The layout of the optimization system also changes the exergetic performance of regenerative heaters, shown in Fig.7. The total exergy loss of regenerative heaters is 11.60 MW, which is greatly reduced compared with that of the base model. On the one hand, owing to the heat injected by flue gas, less extracted steam is needed for the HRH2, HRH4, LRH6, and LRH8 which are paralleled with LPEs, which causes less exergy loss of corresponding regenerative heater. On the other hand, the LPEs heat condensate and feedwater to higher temperature level than the regenerative heaters, leading to less heat transfer rate of HRH1, HRH3, DEA and LRH7, which will also reduce the exergy loss. 
 %There are three factors causing the improvement in exergetic performance. Firstly, for HRH1, HRH3, DEA and LRH7, due to higher temperature level of the water from LPE, the exergy of the inlet feedwater e_(c,i) increases, leading to the efficiency improvement. Secondly, the installation of AOCs causes the reduction of the superheat degree of the extracted steam entering the HRH3 and DEA, and reduce its exergy, namely e_(h,i). At last, compared the original regenerative heaters, an extral part of drainage from corresponding air preheater of optimization system is used to heat the feedwater. Compared with the extracted steam, the drainage from air preheaters has lower exergy, which reduce the irreversible loss to some extent.
 
@@ -497,7 +517,7 @@ For the air preheaters, the improvement in performance results from more reasona
 %对锅炉、汽轮机、和other系统的用效率进行分析
 
 \subsection{Thermodynamic comparison in off-design conditions}
-\label{ssub:0ffdesing_compare}
+\label{ssub:offdesing_compare}
 Considering that large USC power plants' operation under partial load conditions, it is necessary to study the thermal performance of double reheat USC power plants under off-design conditions.
 Four typical operation conditions, THA load, 75\% THA load, 50\% THA load, and 40\% THA load conditions, were chosen for thermodynamic analyses. 
 Fig.~\ref{fig:partload_efficiency} shows novel and reference systems' exergy efficiency under different load conditions.The exergy efficiencies of both systems decrease as the load decrease.
@@ -552,7 +572,7 @@ The following conclusions are drawn from this study:
 Besides, more exhaust heat of the flue gas is recovered since the LPE cools the flue gas to lower temperature. 
 \item The layout in the cascaded utilization system changes the mass flow rates of extractions, which causes increment of output power of the generator and increment of the cold source loss.
 \item The optimization system improves the temperature of secondary air, which improves the fire condition in the combustion chamber.
- The temperature of secondary air under full load in the optimization model is 365 ℃, which is 34 ℃ higher than the design value.
+ The temperature of secondary air under full load in the optimization model is 365 $^	rc$C, which is 34 $^	rc$C higher than the design value.
 \item For the first extraction, throttling loss is not existed while the feedwater of boiler improves little.  
 \item The optimization system theoretically brings remarkable energy saving effects. The simulation results show that the optimization system can reduce the SCE consumption by 5.6 g/kWh under full load, and can even bring a reduction of 2.9 g/kWh under 50\% THA load .
 \end{enumerate}
