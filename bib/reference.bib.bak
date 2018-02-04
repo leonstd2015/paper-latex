@@ -248,15 +248,9 @@
   pages   = {337-354},
 }
 
-@Article{Petroleum2017BP,
+@TechReport{Petroleum2014BP,
   author = {Petroleum, British},
-  title  = {BP Statistical Review of World Energy, June 2017},
-  year   = {2017},
-}
-
-@Article{Petroleum2014BP,
-  author = {Petroleum, British},
-  title  = {BP Statistical Review of World Energy, June 2014},
+  title  = {BP Statistical Review of World Energy},
   year   = {2014},
 }
 
@@ -268,15 +262,6 @@
   pages     = {V002T07A021-V002T07A021},
 }
 
-@Article{Zhao2017Exergy,
-  author  = {Zhao, Zhigang and Su, Sheng and Si, Ningning and Hu, Song and Wang, Yi and Xu, Jun and Jiang, Long and Chen, Gang and Xiang, Jun},
-  title   = {Exergy analysis of the turbine system in a 1000MW double reheat ultra-supercritical power plant},
-  journal = {Energy},
-  year    = {2017},
-  volume  = {119},
-  pages   = {540-548},
-}
-
 @Article{Zhou2016Parametric,
   author  = {Zhou, Luyao and Xu, Gang and Zhao, Shifei and Xu, Cheng and Yang, Yongping},
   title   = {Parametric analysis and process optimization of steam cycle in double reheat ultra-supercritical power plants},
@@ -284,6 +269,16 @@
   year    = {2016},
   volume  = {99},
   pages   = {652-660},
+}
+
+@Article{Li2014Thermodynamic,
+  author  = {Li, Yuanyuan and Zhou, Luyao and Xu, Gang and Fang, Yaxiong and Zhao, Shifei and Yang, Yongping},
+  title   = {Thermodynamic analysis and optimization of a double reheat system in an ultra-supercritical power plant},
+  journal = {Energy},
+  year    = {2014},
+  volume  = {74},
+  number  = {2},
+  pages   = {202-214},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

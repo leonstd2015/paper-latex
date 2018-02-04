@@ -19,4 +19,4 @@ article.pdf
 *.sublime-project
 *.sublime-workspace
 *.bib.bak
-
+*.nlo
