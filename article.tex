@@ -36,7 +36,7 @@
 
 \renewcommand{\figurename}{Fig.}%
 
-\journal{Energy Conversion and Management}
+\journal{Applied Energy}
 
 \begin{document}
 
@@ -49,12 +49,16 @@
 
 \author[hust,ncst]{Lei Zhang}
 \ead{zhanglei@ncst.edu.cn}	
+\author[hust]{Jiayi Zhao}
 \author[hust]{Tao Yang\corref{cor1}}
 \ead{hust\_yt@hust.edu.cn}	
+\author[hust]{Yanping Zhang}
+\author[hust]{Wei Gao}
+
 
 \address[hust]{School of Energy and Power Engineering, Huazhong University of Science and Technology, Wuhan 430074,China}
 \address[ncst]{College of Metallurgy and Energy, NorthChina University of Science and and Technology, Tangshan 063009,China}
-\cortext[cor1]{Corresponding authors}
+\cortext[cor1]{Corresponding author}
 
 \begin{abstract}%修改到300字以内
 Double-reheat ultra-supercritical (USC) unit has received extensive attention for its high efficiency and energy-saving effect.
@@ -132,6 +136,8 @@ Besides, a LPE is installed between the two air preheaters to obtain an appropri
 Thermodynamic and Technic-economic analysis are conducted to reveal the performance improvement.
 It was found that the SCE consumption can be reduced by 6.7\,g/kWh. 
 
+The installation of LPE have some other benefit such as improve The electrostatic precipitator collection efficiency~\cite{Li2016Low}.
+
 Due to  boiler design and thermal system design belong to deferent research area, boiler has been studied as a whole and ignored the joint optimization of boiler heat transfer process and regenerative process.
 
 In this paper, a novel system based on a 1000\,MW double reheat USC reference system  is proposed to realize boiler and regenerative system energy cascade utilization. 
@@ -149,7 +155,7 @@ The parameter settings at maximize continuous power are 310\,bar/600$^\circ$C fo
 The output power of the reference system under the design condition is 1000 MW.
 The unit consists of one super high pressure cylinder (VHP), one high pressure cylinder (HP), one intermediate pressure cylinder (IP), and two low pressure cylinders (LPs).
 Regenerative system with four high pressure regenerative heaters (HRHs), five low pressure regenerative heaters (LRHs), and one deaerator (DEA) are adopted.
-Besides, two additional outer steam coolers (AOC1, AOC2) are used to cool two extractions due to its high super-heating degree. The exhaust steam pressure of the steam turbine is set 4.5\,kPa. The simplified schematic of it is presented in Fig~\ref{fig:reference_system}.
+Besides, two additional outer steam coolers (AOC1, AOC2) are used to cool two extractions due to its high super-heating degree. The exhaust steam pressure of the steam turbine is set 4.5\,kPa. The simplified schematic of it is presented in Fig.~\ref{fig:reference_system}.
 
 \begin{figure}[htbp]
 \centering
@@ -158,7 +164,7 @@ Besides, two additional outer steam coolers (AOC1, AOC2) are used to cool two ex
 \label{fig:reference_system}
 \end{figure}
 %从参考系统的锅炉虽然仍然采用Π型布置，但其内部受热面和传统一次再热锅炉有较大区别。
-The system's boiler heat transfer surfaces arrangement is shown in Fig~\ref{fig:boiler_surface}. 
+The system's boiler heat transfer surfaces arrangement is shown in Fig.~\ref{fig:boiler_surface}. 
 The boiler furnace is composited by the membrane wall, along flue gas flow direction lays low-temperature superheater (Lts) screen tube, cold segment of high-temperature first reheater (Csf), cold segment of high-temperature second reheater (Css), High temperature super-heater (Hts), hot segment of high-temperature first reheater (Hsf), hot segment of high-temperature second reheater (Hss).
 After Hsf and Hss the flue gas channel is divided into the front-duct flue and the back-duct flue.
 The front duct arranges low-temperature first reheater (Ltfr) and the front-duct economizer (Feco).
@@ -274,7 +280,7 @@ For example, the 2nd extraction has the highest temperature, and is applied to h
 \end{figure}
 
 Cause removing of the APH originally installed in the vertical shaft, the flue gas's heat needs to be absorbed by other means.
-As shown in Fig~\ref{fig:novel_system}, the flue gas at the outlet of economizer is utilized to heat the condensate and feed water by four LPEs, which are paralleled to HRH2, HRH4, LRH6, and LRH8 respectively. 
+As shown in Fig.~\ref{fig:novel_system}, the flue gas at the outlet of economizer is utilized to heat the condensate and feed water by four LPEs, which are paralleled to HRH2, HRH4, LRH6, and LRH8 respectively. 
 Part of the condensate and feed water at the inlet of regenerative heater are sent to the LPE, then the heated water join with corresponding regenerative heater's outlet water. 
 Considering the acid dew point temperature, the flue gas temperature at the outlet of the last LPE can be set 95$^\circ$C. 
 
@@ -352,6 +358,7 @@ More detail descriptions of the thermaldynamic model of involved components can 
 \subsection{Thermodynamic metric} %(fold)
 \label{ssub3:analsys method} 
 %为了能够对优化系统与参考系统进行评估，揭示系统优化的内在机理，本文引入热力学第二定律的分析方法即用分析方法。
+Based on the second law of thermodynamics, exergy analysis method is widely used in power plant thermal system analysis and optimization~\cite{Si2017Exergy,Yang2013Comprehensive,Ahmadi2016Energy}
 Exergy analysis, is adopted to reveal the location, the magnitude and the sources of thermodynamic inefficiencies of the unit.
 Usually, exergy destruction and exergy efficiency are chosen as evaluation indices of the thermal system or an individual component, 
 The general exergy balance of component or system can be expressed in the following form:
@@ -407,7 +414,7 @@ Where LHV refer to lower heating value of fuel, C, H, O, N refer to mass fractio
 More details of power plant equipments' exergy  efficiency calculation can be found in Ref.~\cite{G2016Exergy}
 
 In order to clearly analyze the effect of system optimization, this paper divides the double-reheat USC system into four main subsystems and a sum of all other equipments, valves and pips named "other".
-The four main subsystems are: boiler with out APH, turbines, air preheat subsystem and regenerative subsystem.
+The four main subsystems are: boiler with out APH, turbine, air preheat subsystem and regenerative subsystem.
 The equations mentioned above can also be used into exergy analysis of these four main subsystems.
 For the "other" part, this paper used counter balance analysis method to calculate its exergy destruction rate, which means subtract the share of the four main subsystems from the total exergy destruction.
 The exergy destruction rate can be calculated by using equation as follows:
@@ -451,7 +458,7 @@ Table~\ref{table:system exergy campare} gives the results of subsystem exergy an
 It is found that the novel system has an improvement in exergetic performance by an decrease of 10.82\,MW of total exergy destruction rate.
 Exergy destruction rate of boiler accounts for the highest proportion and decrease most (11.04\,MW).
 Air preheat subsystem's exergy destruction rate changes from 27.39\,MW to 16.55\,MW, having a 10.84\,MW decrement, having the largest Optimization ratio.
-In the mean time, turbines and regenerative subsystem have a relatively small change at about 1\,MW. 
+In the mean time, turbine and regenerative subsystem have a relatively small change at about 1\,MW. 
 
 The item "other" of novel system is higher then reference system, showing that the uncalculated components of systems have a increment of exergy destruction rate.
 Among the uncalculated components, the pips' amount increasing and  parameters unmatched work fluid mixing are the main reason why that part has a increment in exergy destruction rate.
@@ -469,7 +476,7 @@ Turbine & 63.33 & 63.97\tabularnewline
 Air preheat subsystem  & 27.39 & 16.55\tabularnewline
 Regenerative subsystem & 22.53 & 21.56\tabularnewline
 Other & 131.03 & 142.42 \tabularnewline
-Total & 1116.72 & 1127.54\tabularnewline
+Total & 1127.54 & 1116.72\tabularnewline
 \bottomrule
 \end{tabular}
 \end{table}

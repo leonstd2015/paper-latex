@@ -19,7 +19,7 @@
 			"file": "article.tex",
 			"settings":
 			{
-				"buffer_size": 44149,
+				"buffer_size": 44542,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -31,24 +31,6 @@
 				"buffer_size": 201,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "article.bbl",
-			"settings":
-			{
-				"buffer_size": 4521,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "article.nls",
-			"settings":
-			{
-				"buffer_size": 2790,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -208,7 +190,7 @@
 			]
 		]
 	],
-	"build_varint": "",
+	"build_varint": "XeLaTeX",
 	"command_palette":
 	{
 		"height": 200.0,
@@ -284,6 +266,8 @@
 	"file_history":
 	[
 		"/C/Users/54933/Documents/Github/article.nls",
+		"/C/Users/54933/Documents/Github/article.bbl",
+		"/C/Users/54933/Desktop/ebsilonstudy/群文件下载/python_EBSILON.py",
 		"/C/Users/54933/Documents/1.tex",
 		"/C/Users/54933/Documents/1.nls",
 		"/C/Users/54933/Desktop/nomenclature.tex",
@@ -294,7 +278,6 @@
 		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/Outline/outline.sublime-settings",
 		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/User/outline.sublime-settings",
 		"/C/Users/54933/Documents/Github/article.pdf",
-		"/C/Users/54933/Documents/Github/article.bbl",
 		"/c/texlive/2017/texmf-dist/tex/latex/elsarticle/elsarticle.cls",
 		"/C/Users/54933/Downloads/Sublime Text Build 3143 x64/Data/Packages/User/LaTeXTools.sublime-settings",
 		"/C/Users/54933/Desktop/SimulateBlock7502.m",
@@ -334,9 +317,14 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"turbines",
+			"turbine",
+			"table",
+			"Figure",
+			"Fig",
 			"APH",
 			"X",
 			"\trc",
@@ -420,15 +408,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 44149,
+						"buffer_size": 44542,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								42967,
-								42967
+								8838,
+								8838
 							]
 						],
 						"settings":
@@ -436,7 +424,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 16896.0,
+						"translation.y": 3264.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -465,64 +453,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "article.bbl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4521,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1139,
-								1219
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 308.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "article.nls",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2790,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2328,
-								2328
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 929.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -564,7 +494,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 310.0
+		"height": 447.0
 	},
 	"output.find_results":
 	{
@@ -574,7 +504,7 @@
 	{
 		"height": 190.0
 	},
-	"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"pinned_build_system": "",
 	"project": "article.sublime-project",
 	"replace":
 	{
