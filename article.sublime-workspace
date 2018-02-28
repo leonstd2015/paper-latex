@@ -19,7 +19,7 @@
 			"file": "article.tex",
 			"settings":
 			{
-				"buffer_size": 45371,
+				"buffer_size": 45432,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -141,7 +141,7 @@
 			],
 			[
 				"Packages/LaTeXTools/LaTeX.sublime-build",
-				"XeLaTeX"
+				"PdfLaTeX"
 			]
 		],
 		[
@@ -181,7 +181,7 @@
 			]
 		]
 	],
-	"build_varint": "",
+	"build_varint": "PdfLaTeX",
 	"command_palette":
 	{
 		"height": 200.0,
@@ -256,6 +256,9 @@
 	],
 	"file_history":
 	[
+		"/C/Users/54933/Desktop/1..py",
+		"/C/Users/54933/Desktop/client.py",
+		"/C/Users/54933/Desktop/import socket.py",
 		"/C/Users/54933/Documents/Github/article (2).tex",
 		"/C/Users/54933/Desktop/templ_latex/e3oXGb_article.tex",
 		"/C/Users/54933/Documents/Github/article.tex",
@@ -303,7 +306,7 @@
 	],
 	"find":
 	{
-		"height": 64.0
+		"height": 65.0
 	},
 	"find_in_files":
 	{
@@ -317,6 +320,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"LTE",
+			"\\\\textcelsius",
+			"textcelsius",
+			"\\textcelsius",
+			"LTE",
+			"LPE",
 			"DEA",
 			"transfer",
 			"superheat",
@@ -371,6 +380,9 @@
 		"regex": true,
 		"replace_history":
 		[
+			"$^\\\\circ$C",
+			"$^\\circ$C",
+			"LTE",
 			"Ex",
 			"^\\circ",
 			"$^\\circ$C",
@@ -412,15 +424,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 45371,
+						"buffer_size": 45432,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								45370,
-								45370
+								19526,
+								19529
 							]
 						],
 						"settings":
@@ -428,7 +440,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 28709.0,
+						"translation.y": 13108.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -478,13 +490,13 @@
 	},
 	"output.latextools":
 	{
-		"height": 190.0
+		"height": 334.0
 	},
 	"pinned_build_system": "",
 	"project": "article.sublime-project",
 	"replace":
 	{
-		"height": 108.0
+		"height": 118.0
 	},
 	"save_all_on_build": true,
 	"select_file":

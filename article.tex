@@ -62,9 +62,9 @@
 
 \begin{abstract}
 The double-reheat ultra-supercritical (USC) unit has received significant attention because of its high efficiency and energy-saving effects.
-The optimal design of the unit's thermal system is still under consideration, however.
-In this paper, an optimized system for reasonable fluid heat transfer temperature-matching and higher efficiency is proposed.
-This novel system uses turbine extractions as heat sources for air preheaters and low-pressure economizers to absorb economizer outlet flue gas heat, thereby realizing the joint optimization of the air preheat process and the regenerative system.
+The optimal design of the USC unit's thermal system is still under consideration, however.
+In this paper, an optimized system for reasonable fluid heat transfer temperature-matching and higher efficiency is proposed .
+This novel system uses turbine extractions as heat sources for air preheaters and low-temperature economizers to absorb economizer outlet flue gas heat, thereby realizing the joint optimization of the air preheat process and the regenerative system.
 Models were built to compare the energetic performance of the novel system and that of the reference system.
 In addition, thermodynamic analyses under partial load operation conditions were conducted. 
 Exergy analysis was used to identify the exergy destruction changes of the transformed parts and to analyze the cause of the changes.
@@ -122,8 +122,8 @@ The results showed that the AOC is an effective method of reducing the superheat
 Li et al.~\cite{Li2014Thermodynamic} proposed a system that uses ten-stage extractions and two outer steam coolers. 
 The results of the thermodynamic and Technical-economic analyses showed that this system can lower the cost of electricity to 55.89 USD/MWh.
 In addition, Kjaer~\cite{Kjaer2010A} proposed a regenerative steam turbine for utilizing the superheat degree of the extractions.
-In this design, part of the extraction from the high pressure turbine enters the additional regenerative steam turbine rather than the regenerative heater.
-Extractions from the intermediate pressure turbine are replaced by those from the regenerative steam turbine.
+In this design, part of the extraction from the turbine high pressure cylinder enters the additional regenerative steam turbine rather than the regenerative heater.
+Extractions from the turbine intermediate pressure cylinder are replaced by those from the regenerative steam turbine.
 The superheat degree of the extraction is significantly reduced in this design and the exergy destruction of regenerative heaters is likewise reduced, thereby resulting in an overall improvement in efficiency.
 
 To reuse the energy of the exhaust flue gas, Xu et al.~\cite{Xu2013Techno} proposed a low-pressure economizer (LPE) based on data compiled from some typical 1000\,MW power generation units in China. 
@@ -143,7 +143,7 @@ The installation of an LPE also has some  other benefits, such as improvements i
 Given that boiler design and thermal system design belong to different research areas, boiler design is studied as a whole apart from the joint optimization of the boiler heat transfer process and regenerative process.
 
 In this paper, a novel system based on a 1000\,MW double-reheat USC reference system is proposed to realize boiler and regenerative system energy cascade utilization. 
-The novel system realized the reasonable temperature-matching of flue gas, air, extraction steam, and condensate water by using turbine-extraction-heating air preheaters (EAPHs) and LPEs.
+The novel system realized the reasonable temperature-matching of flue gas, air, extraction steam, and condensate water by using turbine-extraction-heating air preheaters (EAPHs) and low temperature economizer (LTEs).
 Specifically, this study included the following tasks: (1) modeling the novel system and reference system with EBSILON® Professional; (2) using exergy analysis to compare both systems' exergy efficiency, exergy destruction distribution, and subsystem performance change; and (3) analyzing both systems' thermal performances under off-design conditions.
 
 
@@ -246,7 +246,7 @@ LRH9 &   116.61 & 59.25  & 10.03\tabularnewline
 
 
 
-\subsection{Proposal for a novel system with EAPHs and LPEs}
+\subsection{Proposal for a novel system with EAPHs and LTEs}
 \label{sub2:prop novel sys}
 
 To reduce the energy loss caused by APH, a novel system is proposed in which air is not heated by flue gas in the conventional air preheater. Rather, eight turbine-extraction-heated air preheaters (EAPH1-EAPH8) are used.
@@ -284,9 +284,9 @@ For example, the second extraction has the highest temperature and is applied to
 \end{figure}
 
 Because of the removal of the APH originally installed in the vertical shaft, the flue gas's heat needs to be absorbed by other means.
-As shown in Fig.~\ref{fig:novel_system}, the flue gas at the outlet of the economizer is utilized by four LPEs to heat the condensate and feedwater; these LPEs are correspond with HRH2, HRH4, LRH6, and LRH8, respectively. 
-Part of the condensate and feedwater at the inlet of the regenerative heater is sent to the LPE; then the heated water joins with the corresponding regenerative heater's outlet water. 
-Given the acid dew point temperature, the flue gas temperature at the outlet of the last LPE can be set to 95$^\circ$C. 
+As shown in Fig.~\ref{fig:novel_system}, the flue gas at the outlet of the economizer is utilized by four LTEs to heat the condensate and feedwater; these LTEs are correspond with HRH2, HRH4, LRH6, and LRH8, respectively. 
+Part of the condensate and feedwater at the inlet of the regenerative heater is sent to the LTE; then the heated water joins with the corresponding regenerative heater's outlet water. 
+Given the acid dew point temperature, the flue gas temperature at the outlet of the last LTE can be set to 95$^\circ$C. 
 
 \section{Model description and thermodynamic metrics}
 \label{ssub:model_establishment_and_system_analysis_method}
@@ -299,7 +299,7 @@ EBSILON is a power plant simulation tool that can calculate thermodynamic quanti
 The simulation model yields detailed data with a high degree of reliability in calculating the thermodynamic state.
 When using this software simulation system, the main equipment's work flow parameters and some basic properties need to be settled.
 Because it is designed based on the reference system, the novel system's main input parameters (such as live steam parameters, first/second reheat steam parameters, and turbine extraction parameters) remain the same as those that are shown in Table~\ref{tab:ref input} and Table~\ref{table:extractions_parameter}.
-According to the experience of engine, the upper temperature differences of the novel system's LPE, AOC and EAPH are settled to 30$^\circ$C, 20$^\circ$C, and 5$^\circ$C. 
+According to the experience of engine, the upper temperature differences of the novel system's LTE, AOC and EAPH are settled to 30$^\circ$C, 20$^\circ$C, and 5$^\circ$C. 
 The details of the model's other main components are given in Table~\ref{table:model_details}. 
 
 \begin{table}
@@ -310,14 +310,14 @@ The details of the model's other main components are given in Table~\ref{table:m
 \toprule 
 Components 				& Model details\tabularnewline
 \midrule
-Boiler         			& Economizer outlet flue gas temperature = 376\textcelsius \tabularnewline
- 						& Slag temperature = 850\textcelsius \tabularnewline
+Boiler         			& Economizer outlet flue gas temperature = 376$^\circ$C \tabularnewline
+ 						& Slag temperature = 850$^\circ$C \tabularnewline
  						& Combustion efficiency = 0.99\tabularnewline
 Turbine 				& Isentropic efficiencies range from 0.83 to 0.93, \tabularnewline
  						& calculated from the thermal equilibrium diagram\tabularnewline
-Condenser 				& Upper terminal temperature difference = 5\textcelsius \tabularnewline
-Regenerative reheats 	& Upper terminal temperature differences range from -1.7\textcelsius{}  \tabularnewline
- 						& to 2.2\textcelsius, calculated from the thermal equilibrium diagram.\tabularnewline
+Condenser 				& Upper terminal temperature difference = 5$^\circ$C \tabularnewline
+Regenerative reheats 	& Upper terminal temperature differences range from -1.7$^\circ$C{}  \tabularnewline
+ 						& to 2.2$^\circ$C, calculated from the thermal equilibrium diagram.\tabularnewline
 \bottomrule
 \end{tabular}
 \par\end{centering}
@@ -485,7 +485,7 @@ Total & 1127.54 & 1116.72\tabularnewline
 To gain an in-depth understanding of both systems, a study of the main optimized subsystems, the air preheat subsystem, and the regenerative subsystem, was conducted.
 Table~\ref{table:extraction_compare} shows the variations in the mass flow rates of extractions.
 As illustrated in Table~\ref{table:extraction_compare}, the mass flow rates of the first, third, fifth, and eighth extractions of the novel system were greater than those of the reference system, and the rest of the extractions except the final two ones were lower then those of the reference system.
-Thus, the impact of system optimization on extraction is twofold: air is heated by extractions, which causes an increase in extractions' mass flow, and the use of LPE can decrease it, so the total extraction mass flow remains nearly unchanged. 
+Thus, the impact of system optimization on extraction is twofold: air is heated by extractions, which causes an increase in extractions' mass flow, and the use of LTE can decrease it, so the total extraction mass flow remains nearly unchanged. 
 
 The sum of the increase in mass flow for the fourth to tenth extractions ranges from 138.46 kg/s to 145.07 kg/s, while the eighth extraction increases by 13.9 kg/s.
 The mass flow increase for the low-pressure extractions implies that the novel system can modify the quantity distribution of extractions.
@@ -551,19 +551,18 @@ Combining Fig.~\ref{fig:APH_temper_compare} and Fig.~\ref{fig:novel_APH_exergy},
 \label{fig:novel_APH_exergy}
 \end{figure}
 
-The regenerative subsystem of the novel system uses LPES connected parallel with EAPH to absorb the economizer's outlet flue heat and eliminate the AOCs originally used to heat feedwater.
-LPE inlet water is heated to the temperature of the corresponding RH outlet temperature.
+The regenerative subsystem of the novel system uses LTES connected parallel with EAPH to absorb the economizer's outlet flue heat and eliminate the AOCs originally used to heat feedwater.
+LTE inlet water is heated to the temperature of the corresponding RH outlet temperature.
 Keeping the extractions' parameters constant, the average heat transfer temperature difference of the RHs changes little.
 This means that their exergy efficiency is the same as that of the reference system.
 
 Fig.~\ref{fig:regenerative_subsys_compare} shows the regenerative subsystem's exergy destruction rate distribution between the two systems.
 It can be seen that the novel system's exergy destruction rate decreased and great changes have taken place in the destruction's distribution.
-Because of the flow-diverting effects of LPEs,the exergy destruction rate of regenerative reheaters and DEA changes from 20.16 MW to 11.303 MW.
+Because of the flow-diverting effects of LTEs,the exergy destruction rate of regenerative reheaters and DEA changes from 20.16 MW to 11.303 MW.
 
-The LPEs exergy destruction rate reaches 10.25 MW, and Fig.~\ref{fig:LPE_exergy_LMDT} shows the LEPs'
-exergy efficiency and heat transfer LMTD.
-As shown in Fig.~\ref{fig:LPE_exergy_LMDT}, the highest efficiency one is LPE1 with 93.50\%, and the lowest efficiency one is LPE4 with 87.44\%. 
-The LPEs' overall exergy efficiency is 91.62\%, which is much higher than that of the flue-air heat transfer of the reference system, and the temperature difference of the LPEs is between 23$^\circ$C and 42$^\circ$C.
+The LTEs exergy destruction rate reaches 10.25 MW, and Fig.~\ref{fig:LPE_exergy_LMDT} shows the LTEs' exergy efficiency and heat transfer LMTD.
+As shown in Fig.~\ref{fig:LPE_exergy_LMDT}, the highest efficiency one is LTE1 with 93.50\%, and the lowest efficiency one is LTE4 with 87.44\%. 
+The LTEs' overall exergy efficiency is 91.62\%, which is much higher than that of the flue-air heat transfer of the reference system, and the temperature difference of the LTEs is between 23$^\circ$C and 42$^\circ$C.
 
 \begin{figure}[htbp]
 \centering
@@ -577,7 +576,7 @@ The LPEs' overall exergy efficiency is 91.62\%, which is much higher than that o
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.6\textwidth]{fig/LPE_exergy_LMTD.png}
-\caption{Exergy efficiency and LMTD of LPEs} 
+\caption{Exergy efficiency and LMTD of LTEs} 
 \label{fig:LPE_exergy_LMDT}
 \end{figure}
 
@@ -622,7 +621,7 @@ According to the data presented in Table~\ref{table:system exergy campare}, give
 
 \section{Conclusion}
 
-This paper proposed a novel system for a 1000\,MW double-reheat ultra-supercritical unit that uses turbine extractions to preheat air and low-pressure economizers to replace the air preheater originally installed in vertical shaft.
+This paper proposed a novel system for a 1000\,MW double-reheat ultra-supercritical unit that uses turbine extractions to preheat air and low-temperature economizers to replace the air preheater originally installed in vertical shaft.
 Thermodynamic analysis was conducted to reveal the energy-saving effects and thermal performance changes of key components. 
 The novel system was found to be effective in overcoming the reference system's imperfections 
 and may prove an effective method for the optimization of the double-reheat USC unit.
@@ -667,6 +666,7 @@ This study was supported by the National Basic Research Program of China (Grant 
 \nomenclature{AOC}{additional outer steam cooler}
 \nomenclature{SCE}{standard coal equivalent}
 \nomenclature{USC}{ultra-supercritical}
+\nomenclature{LTE}{low temperature economizer}
 \nomenclature{LPE}{low pressure economizer}
 \nomenclature{EAPH}{turbine-extraction-heated air preheater}
 \nomenclature{APH}{air preheater}

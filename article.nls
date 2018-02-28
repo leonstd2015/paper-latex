@@ -3,68 +3,70 @@
  \nomgroup{A}
 
   \item [{AOC}]\begingroup additional outer steam cooler\nomeqref {7}
-		\nompageref{24}
-  \item [{APH}]\begingroup air preheater\nomeqref {7}\nompageref{24}
+		\nompageref{25}
+  \item [{APH}]\begingroup air preheater\nomeqref {7}\nompageref{25}
   \item [{C, H, O, N}]\begingroup mass fraction of carbon, hydrogen, oxygen, nitrogen of coal\nomeqref {7}
-		\nompageref{24}
-  \item [{DEA}]\begingroup deaerator\nomeqref {7}\nompageref{24}
+		\nompageref{25}
+  \item [{DEA}]\begingroup deaerator\nomeqref {7}\nompageref{25}
   \item [{EAPH}]\begingroup turbine-extraction-heated air preheater\nomeqref {7}
-		\nompageref{24}
-  \item [{ECO}]\begingroup  economizer\nomeqref {7}\nompageref{24}
+		\nompageref{25}
+  \item [{ECO}]\begingroup  economizer\nomeqref {7}\nompageref{25}
   \item [{HP}]\begingroup high pressure cylinder\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{HRH}]\begingroup high pressure regenerative heater\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{IP}]\begingroup intermediate pressure cylinder\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{LHV}]\begingroup lower heating value of fuel\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{LMTD}]\begingroup logarithm mean temperature difference\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{LP}]\begingroup low pressure cylinder\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{LPE}]\begingroup low pressure economizer\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{LRH}]\begingroup low pressure regenerative heater\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
+  \item [{LTE}]\begingroup low temperature economizer\nomeqref {7}
+		\nompageref{25}
   \item [{RH}]\begingroup regenerative heater\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{SCE}]\begingroup standard coal equivalent\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{THA}]\begingroup turbine heat acceptance\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{USC}]\begingroup ultra-supercritical\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{VHP}]\begingroup super high pressure cylinder\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
 
  \nomgroup{M}
 
   \item [{$\dot{Ex}$}]\begingroup exergy rate (MW)\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{$\dot{I}$}]\begingroup exergy destruction rate (MW)\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{$\dot{m}$}]\begingroup mass flow rate (kg/s)\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{$\dot{W}$}]\begingroup work rate or power done by the system (MW)\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{$\eta_{\uppercase\expandafter{\romannumeral2}}$}]\begingroup exergy efficiency\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{$ex$}]\begingroup specific exergy (MJ/kg)\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{$h$}]\begingroup specific enthalpy (MJ/kg)\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{$s$}]\begingroup specific entropy (MJ/kg\,K)\nomeqref {7}
-		\nompageref{24}
-  \item [{$T$}]\begingroup temperature (K)\nomeqref {7}\nompageref{24}
+		\nompageref{25}
+  \item [{$T$}]\begingroup temperature (K)\nomeqref {7}\nompageref{25}
   \item [{$y_{D}$}]\begingroup exergy destruction ratio (MW/MW)\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
 
  \nomgroup{S}
 
   \item [{$in$}]\begingroup inlet component or system\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
   \item [{$out$}]\begingroup outlet component or system\nomeqref {7}
-		\nompageref{24}
+		\nompageref{25}
 
 \end{thenomenclature}
