@@ -19,7 +19,7 @@
 			"file": "article.tex",
 			"settings":
 			{
-				"buffer_size": 45432,
+				"buffer_size": 45461,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -181,7 +181,7 @@
 			]
 		]
 	],
-	"build_varint": "PdfLaTeX",
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 200.0,
@@ -320,6 +320,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"pressure",
+			"presure",
 			"LTE",
 			"\\\\textcelsius",
 			"textcelsius",
@@ -424,15 +426,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 45432,
+						"buffer_size": 45461,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19526,
-								19529
+								1908,
+								1908
 							]
 						],
 						"settings":
@@ -440,7 +442,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 13108.0,
+						"translation.y": 2032.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
