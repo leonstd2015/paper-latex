@@ -19,7 +19,7 @@
 			"file": "article.tex",
 			"settings":
 			{
-				"buffer_size": 45461,
+				"buffer_size": 45605,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -256,17 +256,19 @@
 	],
 	"file_history":
 	[
+		"/C/Users/54933/Desktop/xx.py",
+		"/C/Users/54933/Documents/Github/article.tex",
+		"/C/Users/54933/Desktop/article.tex",
+		"/C/Users/54933/Documents/Github/article.out",
 		"/C/Users/54933/Desktop/1..py",
 		"/C/Users/54933/Desktop/client.py",
 		"/C/Users/54933/Desktop/import socket.py",
 		"/C/Users/54933/Documents/Github/article (2).tex",
 		"/C/Users/54933/Desktop/templ_latex/e3oXGb_article.tex",
-		"/C/Users/54933/Documents/Github/article.tex",
 		"/C/Users/54933/Documents/Github/article.nls",
 		"/C/Users/54933/Desktop/templ_latex/HtURca_article.tex",
 		"/C/Users/54933/Desktop/HtURca_article.tex",
 		"/C/Users/54933/Documents/Github/文章仍旧需要完成的工作",
-		"/C/Users/54933/Desktop/article.tex",
 		"/C/Users/54933/Downloads/article.tex",
 		"/C/Users/54933/Documents/Github/article.bbl",
 		"/C/Users/54933/Desktop/ebsilonstudy/群文件下载/python_EBSILON.py",
@@ -306,7 +308,7 @@
 	],
 	"find":
 	{
-		"height": 65.0
+		"height": 67.0
 	},
 	"find_in_files":
 	{
@@ -320,6 +322,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"LMTD",
+			"0.6\\\\textwidth",
+			"℃",
+			"unit",
+			"double",
 			"pressure",
 			"presure",
 			"LTE",
@@ -382,6 +389,8 @@
 		"regex": true,
 		"replace_history":
 		[
+			"0.8\\\\textwidth",
+			"0.8\\textwidth",
 			"$^\\\\circ$C",
 			"$^\\circ$C",
 			"LTE",
@@ -426,15 +435,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 45461,
+						"buffer_size": 45605,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1908,
-								1908
+								1188,
+								1188
 							]
 						],
 						"settings":
@@ -442,7 +451,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2032.0,
+						"translation.y": 1584.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -453,7 +462,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 46.0
+		"height": 48.0
 	},
 	"input":
 	{
@@ -498,7 +507,7 @@
 	"project": "article.sublime-project",
 	"replace":
 	{
-		"height": 118.0
+		"height": 122.0
 	},
 	"save_all_on_build": true,
 	"select_file":

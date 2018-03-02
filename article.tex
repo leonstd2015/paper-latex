@@ -2,7 +2,7 @@
 
 \documentclass[preprint,12pt]{elsarticle}
 \usepackage{caption} 
-\usepackage{color}%临时添加,
+\usepackage{color}%
 \usepackage{amssymb,hyperref,booktabs,multirow,multicol,ifthen}
 \usepackage{enumerate}
 \usepackage{nomencl}
@@ -18,12 +18,12 @@
 \ifthenelse{\equal{#1}{U}}{\item[\textbf{Superscripts}]}{
 \ifthenelse{\equal{#1}{C}}{\item[\textbf{Constants}]}{
 \ifthenelse{\equal{#1}{M}}{\item[\textbf{Mathematical symbols}]}{
-}%几个类别需要几个括号
+}%
 }
 }
 }
-}%几个类别需要几个括号
-}%对应1]
+}%
+}%
 \makenomenclature
 
  \usepackage{amsmath}%
@@ -44,7 +44,7 @@
 
 
 
-\title{A novel 1000\,MW double-reheat ultra supercritical system with turbine-extraction-heated air preheaters and low-temperature economizers}
+\title{A novel 1000\,MW double-reheat ultra-supercritical system with turbine-extraction-heated air preheaters and low-temperature economizers}
 
 
 \author[hust,ncst]{Lei Zhang}
@@ -52,6 +52,7 @@
 \author[hust]{Jiayi Zhao}
 \author[hust]{Tao Yang\corref{cor1}}
 \ead{hust\_yt@hust.edu.cn}	
+\author[hust]{Sheng Guo}
 \author[hust]{Yanping Zhang}
 \author[hust]{Wei Gao}
 
@@ -61,9 +62,9 @@
 \cortext[cor1]{Corresponding author}
 
 \begin{abstract}
-The double-reheat ultra-supercritical (USC) unit has received significant attention because of its high efficiency and energy-saving effects.
-The optimal design of the USC unit's thermal system is still under consideration, however.
-In this paper, an optimized system for reasonable fluid heat transfer temperature-matching and higher efficiency is proposed .
+The double-reheat ultra-supercritical (USC) coal-fired power unit has received significant attention because of its high efficiency and energy-saving effects.
+The optimal design of the unit's thermal system is still under consideration, however.
+In this paper, an optimized system for reasonable fluid heat transfer temperature-matching and higher efficiency is proposed based on a typical double-reheat USC unit.
 This novel system uses turbine extractions as heat sources for air preheaters and low-temperature economizers to absorb economizer outlet flue gas heat, thereby realizing the joint optimization of the air preheat process and the regenerative system.
 Models were built to compare the energetic performance of the novel system and that of the reference system.
 In addition, thermodynamic analyses under partial load operation conditions were conducted. 
@@ -96,7 +97,7 @@ Statistics show that China has been the largest producer and consumer of energy 
 In 2016, Chinese coal production fell by 7.9\% and the price of steam coal increased by over 60\%~\cite{Petroleum2017BP}. 
 Improving system efficiency and reducing coal consumption remain the primary tasks to be considered in power plant design. Nowadays ultra-supercritical (USC) power plants with large capacities and high parameters are considered to be feasible ways to save energy; as such, their usage has spread rapidly worldwide.
 The double-reheat USC unit is a new generation of USC unit that can improve thermal performance when compared with a single reheat unit~\cite{Zhao2017Exergy}. 
-According to~\cite{Zhao2017Exergy}, a double reheat unit with the inlet parameter 30.0\,MPa/600/620/620$^\circ$C improves the heat efficiency by 2.4\%-2.6\% when compared with a commonly used USC unit with the inlet parameter 25.0\,MPa/600/600$^\circ$C.
+According to~\cite{Zhao2017Exergy}, a double-reheat unit with the inlet parameter 30.0\,MPa/600/620/620$^\circ$C improves the heat efficiency by 2.4\%-2.6\% when compared with a commonly used USC unit with the inlet parameter 25.0\,MPa/600/600$^\circ$C.
  The United States built the first double-reheat unit with the main parameter 34.4 MPa/649/566/566$^\circ$C in the 1960s.
  Two 700 MW double-reheat USC units were put into operation in Japan in 1990. 
  The process of building five double-reheat USC units began in China in 2012, and three of these units were put into operation in 2015.
@@ -170,12 +171,12 @@ The system's boiler heat transfer surface arrangement is shown in Fig.~\ref{fig:
 The boiler furnace is composed of the membrane wall; along the flue gas flow direction lie the low-temperature superheater (Lts) screen tube, the cold segment of the first high-temperature reheater (Csf), the cold segment of the second high-temperature reheater (Css), the high-temperature super-heater (Hts), the hot segment of the first high-temperature reheater (Hsf), and the hot segment of the second high-temperature reheater (Hss).
 After Hsf and Hss, the flue gas channel is divided into the front-duct flue and the back-duct flue.
 The first low-temperature reheater (Ltfr) and the front-duct economizer (Feco) is arranged in the front duct.
-The second low-temperature reheater (Ltsr) and the back-duct economizer (Beco) is arranged The back duct .
+The second low-temperature reheater (Ltsr) and the back-duct economizer (Beco) is arranged in the back duct.
 The air preheater (APH) is arranged in the vertical shaft.
 
 From the arrangement of the heating transfer surfaces, the boiler can be divided into two parts: the part performing the heat absorption for the water/steam process in the furnace and the APH that completes the air preheat process.
 It can be seen that most heating surfaces of the boiler are arranged in the furnace, while the horizontal flue and vertical shaft are only equipped with APH.
-This means that the horizontal flue and vertical shaft leave sufficient space for the installation of other equipment.
+This means that the horizontal flue gas duct and vertical shaft have sufficient space for the installation of other system optimization equipment.
 
 \begin{figure}[htbp]
 \centering
@@ -299,7 +300,7 @@ EBSILON is a power plant simulation tool that can calculate thermodynamic quanti
 The simulation model yields detailed data with a high degree of reliability in calculating the thermodynamic state.
 When using this software simulation system, the main equipment's work flow parameters and some basic properties need to be settled.
 Because it is designed based on the reference system, the novel system's main input parameters (such as live steam parameters, first/second reheat steam parameters, and turbine extraction parameters) remain the same as those that are shown in Table~\ref{tab:ref input} and Table~\ref{table:extractions_parameter}.
-According to the experience of engine, the upper temperature differences of the novel system's LTE, AOC and EAPH are settled to 30$^\circ$C, 20$^\circ$C, and 5$^\circ$C. 
+According to the experience of power plant design, the upper temperature differences of the novel system's LTE, AOC and EAPH are settled to 30$^\circ$C, 20$^\circ$C, and 5$^\circ$C. 
 The details of the model's other main components are given in Table~\ref{table:model_details}. 
 
 \begin{table}
@@ -316,8 +317,9 @@ Boiler         			& Economizer outlet flue gas temperature = 376$^\circ$C \tabul
 Turbine 				& Isentropic efficiencies range from 0.83 to 0.93, \tabularnewline
  						& calculated from the thermal equilibrium diagram\tabularnewline
 Condenser 				& Upper terminal temperature difference = 5$^\circ$C \tabularnewline
-Regenerative reheats 	& Upper terminal temperature differences range from -1.7$^\circ$C{}  \tabularnewline
- 						& to 2.2$^\circ$C, calculated from the thermal equilibrium diagram.\tabularnewline
+Regenerative reheats 	& Upper terminal temperature differences range from  \tabularnewline
+ 						& -1.7$^\circ$C{} to 2.2$^\circ$C, calculated from the thermal\tabularnewline
+ 						& equilibrium diagram.\tabularnewline
 \bottomrule
 \end{tabular}
 \par\end{centering}
@@ -341,7 +343,7 @@ A more detailed description of the thermodynamic model of the components can be 
 \begin{tabular}{cccccc}
 \toprule 
 \multirow{2}{*}{Extractions} & Pressure & Temperature & \multirow{2}{*}{Extractions} & Pressure & Temperature\tabularnewline
- & (bar) & (℃) &  & (bar) & (℃)\tabularnewline
+ & (bar) & ($^\circ$C) &  & (bar) & ($^\circ$C)\tabularnewline
 \midrule
 1st & 107.89  & 429.00 & 6th & 7.15  & 394.01 \tabularnewline
 2nd & 61.89 & 528.30  & 7th & 3.90  & 313.17\tabularnewline
@@ -518,7 +520,7 @@ Total & 282.97 & 176.14 & 106.49\tabularnewline
 \end{table}
 
 Air is heated by the EAPHs and AOCs in the novel system from 23$^\circ$C to 363.33$^\circ$C. 
-A majority of the outlet air of EAPH6 is sent to coal pulverizer as primary air, and the rest of the air is heated to 363.33$^\circ$C. 
+Part of the outlet air of EAPH6 is sent to coal pulverizer as primary air, and the rest of the air is heated to 363.33$^\circ$C as secondary air. 
 
 Fig.~\ref{fig:APH_temper_compare} shows the air preheat process's temperature difference between the hot and cold fluid of the novel and reference systems.
 The red triangle represent the average steam temperature of EAPH and the red hollow triangle represent the average steam temperature of AOC.
@@ -530,7 +532,7 @@ On the other hand, the total heat exchange and secondary air temperature of the 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.6\textwidth]{fig/APH_temper_compare.png}
+\includegraphics[width=0.8\textwidth]{fig/APH_temper_compare.png}
 \caption{T-Q diagram of air preheat subsystems} 
 \label{fig:APH_temper_compare}
 \end{figure}
@@ -566,7 +568,7 @@ The LTEs' overall exergy efficiency is 91.62\%, which is much higher than that o
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.6\textwidth]{fig/regenerative_subsys_compare.png}
+\includegraphics[width=0.8\textwidth]{fig/regenerative_subsys_compare.png}
 \caption{Exergy destruction comparison of regenerative subsystems} 
 \label{fig:regenerative_subsys_compare}
 \end{figure}
@@ -575,7 +577,7 @@ The LTEs' overall exergy efficiency is 91.62\%, which is much higher than that o
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.6\textwidth]{fig/LPE_exergy_LMTD.png}
+\includegraphics[width=0.8\textwidth]{fig/LPE_exergy_LMTD.png}
 \caption{Exergy efficiency and LMTD of LTEs} 
 \label{fig:LPE_exergy_LMDT}
 \end{figure}
@@ -593,7 +595,7 @@ This implies that the novel system can increase exergy efficiency under partial 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.6\textwidth]{fig/partload_efficiency.png}
+\includegraphics[width=0.8\textwidth]{fig/partload_efficiency.png}
 \caption{Exergy efficiency comparison under off-design conditions} 
 \label{fig:partload_efficiency}
 \end{figure}
@@ -606,14 +608,14 @@ A large exergy destruction ratio value indicates that the subsystem has more sig
 Fig.~\ref{fig:partload_subsys_exergyrate} shows the exergy destruction ratio difference ($y_{D,reference}-y_{D,novel}$) between the reference system and the novel system.
 This indicates that the contribution to energy-saving effects decreases as follows: the boiler, the air preheat subsystem, the regenerative subsystem, and the steam turbine.
 As the load decreases from the THA load condition, it can be seen that the load change has the greatest effect on the boiler, while the change in the load condition barely affects the steam turbine.
-When the load is reduced to 40\%THA, the four subsystems of the novel system still have lower exergy destruction rates than those of the reference system.
+When the load is reduced to 40\% THA, the four subsystems of the novel system still have lower exergy destruction rates than those of the reference system.
 However, the exergy-saving effect of these four subsystems decrease, and the exergy destruction rate increase among the other uncalculated components causes the novel system's exergy-saving effects to decrease.
 According to the data presented in Table~\ref{table:system exergy campare}, given the great exergy destruction of the boiler, the decrease in load has little effect on the boiler's exergy efficiency. The air preheat subsystem experiences the greatest effect.
 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.6\textwidth]{fig/partload_subsys_exergyrate.png}
+\includegraphics[width=0.8\textwidth]{fig/partload_subsys_exergyrate.png}
 \caption{Difference in subsystems' exergy destruction rates under off-design conditions} 
 \label{fig:partload_subsys_exergyrate}
 \end{figure}
