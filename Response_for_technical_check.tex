@@ -1,0 +1,95 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+\usepackage{charter} % Use the Charter font for the document text
+\usepackage{changepage}
+\usepackage{color}
+
+\usepackage{ amssymb }
+
+%\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+%\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+%\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+%\newlfmP{sigsize=50pt} % Slightly decrease the height of the signature field
+
+
+%\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+ % Name
+\signature{\\\includegraphics[width=4cm]{1.png}\\Tao Yang}
+
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+\greetto{Dear editor,} % Greeting text
+\closeline{Sincerely yours,} % Closing text
+
+\nameto{$\langle$ Applied Energy$\rangle$} % Addressee of the letter above the to address
+
+\addrto{
+$\langle$ A novel 1000\,MW double-reheat ultra-supercritical system with \\
+turbine-extraction-heated air preheaters and low-temperature economizers$\rangle$\\ % To address
+}
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+Thank you for your useful comments and suggestions on the language and the structure
+of our manuscript. We have modified the manuscript accordingly, and the detailed
+corrections are listed below point by point: 
+
+\begin{enumerate}
+\item[1)] A cover letter is required to declare the manuscript has not been published before nor submitted to another journal for the consideration of publication. 
+\begin{adjustwidth}{1cm}{0cm}
+\qquad 
+\begin{itemize}
+\item[\checkmark]
+\textcolor{blue}{ The cover letter has been uploaded with the required information.}
+\end{itemize}
+
+\end{adjustwidth} 
+\end{enumerate}
+
+
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+\end{newlfm}
+\end{document}

@@ -1,0 +1,110 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+\usepackage{charter} % Use the Charter font for the document text
+\usepackage{changepage}
+\usepackage{color}
+
+\usepackage{ amssymb }
+
+%\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+%\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+%\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+%\newlfmP{sigsize=50pt} % Slightly decrease the height of the signature field
+\newlfmP{addrfromphone} % Print a phone number under the sender's address
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+\PhrPhone{Phone} % Customize the "Telephone" text
+\PhrEmail{Email} % Customize the "E-mail" text
+
+%\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+ % Name
+\signature{\\\includegraphics[width=4cm]{1.png}\\Tao Yang}
+\addrfrom{
+\today\\[12pt] % Date
+1037 Luoyu Road \\ % Address
+Wuhan, Hubei, China, 430074
+}
+\phonefrom{+86 15032905712}
+\emailfrom{hust_yt@hust.edu.cn} % Email address
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+\greetto{Dear editor,} % Greeting text
+\closeline{Sincerely yours,} % Closing text
+
+\nameto{$\langle$ Applied Energy$\rangle$} % Addressee of the letter above the to address
+
+\addrto{
+$\langle$ A novel 1000\,MW double-reheat ultra-supercritical system with \\
+turbine-extraction-heated air preheaters and low-temperature economizers$\rangle$\\ % To address
+}
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+I enclose a manuscript entitled `A novel 1000 MW double-reheat ultra-supercritical system with turbine-extraction-heated air preheaters and low-temperature economizers'. 
+All of the authors agree to the submission of this paper.
+
+This paper belongs to the field of energy system analysis and optimization using exergy analysis method.
+
+The manuscript includes 25 pages, 8 tables, and 10 figures prepared using Latex. 
+The latex source files have been upload in a zip file.
+
+We respectfully submit that the following individuals would be suitable peer reviewers based on their expertise in the field:
+\\
+\\
+Inmaculada Arauzo, Universidad de Zaragoza (Spain), E-mail: iarauzo@unizar.es
+
+Danmei Xie, Wuhan University (China), E-mail: dmxie@whu.edu.cn
+
+Daotong Chong, Xi'an Jiao tong University (China),E-mail: dtchong@mail.xjtu.edu.cn
+\\
+\\
+
+I confirm that I have mentioned all the organizations that found my research in the acknowledgment section of my submission, including grant numbers.
+And the manuscript has not been published before nor submitted to another journal for the consideration of publication.
+
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+\end{newlfm}
+\end{document}
