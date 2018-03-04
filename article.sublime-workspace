@@ -256,6 +256,12 @@
 	],
 	"file_history":
 	[
+		"/C/Users/54933/Desktop/Response_for_technical_check.tex",
+		"/C/Users/54933/Desktop/cover_letter.tex",
+		"/C/Users/54933/Documents/Github/cover_letter.tex",
+		"/C/Users/54933/AppData/Local/Temp/HZ$D.655.2719/HZ$D.655.2720/cover_letter_3.tex",
+		"/C/Users/54933/Downloads/test1.tex",
+		"/C/Users/54933/Desktop/cover_letter_3.tex",
 		"/C/Users/54933/Desktop/xx.py",
 		"/C/Users/54933/Documents/Github/article.tex",
 		"/C/Users/54933/Desktop/article.tex",
@@ -442,8 +448,8 @@
 						"selection":
 						[
 							[
-								1188,
-								1188
+								11632,
+								12003
 							]
 						],
 						"settings":
@@ -451,7 +457,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1584.0,
+						"translation.y": 144.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
