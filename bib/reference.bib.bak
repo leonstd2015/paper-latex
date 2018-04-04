@@ -248,11 +248,11 @@
   pages   = {337-354},
 }
 
-@Article{Petroleum2017BP,
-  author  = {Petroleum, British},
-  title   = {BP Statistical Review of World Energy, June 2017},
-  journal = {Economic Policy},
-  year    = {2017},
+@TechReport{2017a,
+  title       = {BP Statistical Review of World Energy 2017},
+  institution = {BP},
+  year        = {2017},
+  url         = {https://www.bp.com/content/dam/bp/en/corporate/pdf/energy-economics/statistical-review-2017/bp-statistical-review-of-world-energy-2017-full-report.pdf},
 }
 
 @Article{Petroleum2014BP,
@@ -316,6 +316,110 @@
   year    = {2016},
   volume  = {93},
   pages   = {509-517},
+}
+
+@Article{Zhou2014A,
+  author  = {Zhou, Luyao and Xu, Gang and Yang, Yongping and Zhao, Shifei and Xu, Cheng and Zhang, Kai},
+  title   = {A Comparative Study of Superheat Utilization Measures of Extraction Steam in Double Reheat Power Plants ☆},
+  journal = {Energy Procedia},
+  year    = {2014},
+  volume  = {61},
+  pages   = {1356-1359},
+}
+
+@Article{Liu2018,
+  author          = {Liu, Yinhe and Li, Qinlun and Duan, Xiaoli and Zhang, Yun and Yang, Zhen and Che, Defu},
+  title           = {{Thermodynamic analysis of a modified system for a 1000 MW single reheat ultra-supercritical thermal power plant}},
+  journal         = {Energy},
+  year            = {2018},
+  volume          = {145},
+  pages           = {25--37},
+  issn            = {03605442},
+  abstract        = {Thermodynamics analysis is performed on the modified steam system for a 1000 MW single reheat ultra-supercritical power plant and compared to the reference one. In the modified system, all the flue gas from the economizer is used to heat the partial condensate, and total air for combustion together with the rest of condensate is preheated by extraction steam from turbine. The flowrate of the partial condensate is adjustable to ensure its heat-capacity flowrate equivalent to that of the flue gas in the modified scheme, which avoids the pinch point of temperature difference of the air preheater in reference system. Results show that the exit temperature of flue gas from boiler can be reduced to a lower value without cold end corrosion and clog. The power generation efficiency of the power plant of 48.35{\%} is achieved, which is 1.27{\%} points higher than that of reference unit at the same capacity. The improvement of thermal efficiency is mainly from both the low-grade heat recovery of flue gas by the flue gas-condensate preheater and the small temperature difference between the flue gas and the condensate, therefore a higher inlet water temperature of the economizer can be reached.},
+  doi             = {10.1016/j.energy.2017.12.060},
+  file            = {:C$\backslash$:/Users/54933/Documents/Mendeley Desktop/Liu et al/2018 - Thermodynamic analysis of a modified system for a 1000 MW single reheat ultra-supercritical thermal power plant(2).pdf:pdf},
+  keywords        = {Low-grade heat recovery,Pinch point,Power generation efficiency,Steam power plant,Thermodynamics analysis},
+  mendeley-groups = {热力系统/A优化,APEN},
+  publisher       = {Elsevier Ltd},
+  url             = {https://doi.org/10.1016/j.energy.2017.12.060},
+}
+
+@TechReport{2018,
+  title       = {The analysis and forecast report of the national electricity supply and demand in 2017-2018},
+  institution = {China electricity council},
+  year        = {2018},
+  url         = {http://www.cec.org.cn/guihuayutongji/gongzuodongtai/2018-02-01/177584.html},
+}
+
+@TechReport{2017,
+  title       = {BP Energy Outlook 2017 Edition},
+  institution = {BP},
+  year        = {2017},
+  url         = {https://www.bp.com/content/dam/bp/ pdf/energy-economics/energy-outlook-2017/bp-energy-outlook-2017.pdf.},
+}
+
+@InProceedings{Wang2016,
+  author    = {Wang, Weiliang and Zhang, Hai and Lv, Junfu and Ni, Weidou and Li, Yongsheng and Liu, Jianmin},
+  title     = {{A study on superheat utiliza tion of extraction steam in a 1000MW double reheat ultra-supercritical unit}},
+  booktitle = {American Society of Mechanical Engineers, Power Division (Publication) POWER},
+  year      = {2016},
+  volume    = {2016-Janua},
+  abstract  = {{\textcopyright} Copyright 2016 by ASME. The world's first 1000MW double reheat ultra-supercritical unit has been in operation since September 25 th , 2015 in Taizhou, China. The thermal efficiency at turbine heat-rate acceptance (THA) condition is around 51{\%}, which is the highest among all condensing units in coal-fired power plants around the world. However, the resultant superheat degree of the extraction steam is relatively high, leading to a large temperature difference in heat transfer process in the regenerative system, thereby a great exergy loss. In order to utilize the superheat of turbine bleeds more effectively, we present a scheme by employing an outer steam cooler (OSC) after the last high pressure heater in series to use the superheat to heat the feed water. Based on the newly installed unit in Taizhou, we examine the energy saving effect of the superheat utilization of different bleeds and their possible combinations respectively. The influencing factors of the mass flow rate, superheat, and effective superheat of the extraction steam are studied. Thermodynamic analyses revealed that the second extraction steam has not only high effective superheat, but also large mass flow rate, so in the overall efficiency improvement it ranks first and the third extraction steam ranks second. Although the fourth extraction steam has the largest superheat, it ranks third as the result of relatively lower mass flow rate. It was found that at nominal load, by adopting OSC's to utilize the superheat of the second to sixth extraction steam, temperature of the feed water can increase by 8.1 °C, 3.5 °C, 2.6 °C, 1.1 °C, and 1 °C respectively, and the net coal consumption reduces by 0.73g/kWh, 0.47g/kWh, 0.40g/kWh, 0.21g/kWh and 0.22g/kWh accordingly. Consequently, three possible schemes are recommended for future design: one is to adopt one OSC to utilize the superheat of the second extraction steam, in return of 8.1°C increment in feed water temperature and 0.73g/kWh reduction of the net coal consumption; the second is to adopt two OSC's to utilize the superheat of the second and third extraction steam at the same time, in return of 11.4°C increment in feed water temperature and 1.21g/kWh reduction of the net coal consumption; and the last is to apply three OSC's to utilize the superheat of the second to the fourth extraction steam simultaneously, to achieve 13.9°C increment in feed water temperature, and 1.62g/kWh reduction of the net coal consumption.},
+  doi       = {10.1115/POWER2016-59129},
+  file      = {:C$\backslash$:/Users/54933/Documents/Mendeley Desktop/Wang et al/2016 - A study on superheat utiliza tion of extraction steam in a 1000MW double reheat ultra-supercritical unit(2).pdf:pdf},
+  isbn      = {9780791850213},
+}
+
+@Article{Xu2015Optimum,
+  author          = {Xu, Gang and Zhou, Luyao and Zhao, Shifei and Liang, Feifei and Xu, Cheng and Yang, Yongping},
+  title           = {{Optimum superheat utilization of extraction steam in double reheat ultra-supercritical power plants}},
+  journal         = {Applied Energy},
+  year            = {2015},
+  volume          = {160},
+  pages           = {863--872},
+  issn            = {03062619},
+  abstract        = {Double reheat ultra-supercritical power plants have been receiving an increasing amount of attention because of their high thermal efficiency. However, the superheat degree of extraction steam in double reheat power plants is relatively high and results in a large temperature difference in the heat transfer process of the regenerative system. As a result, this impedes further improvement of the thermal efficiency of double reheat power plants. This paper presents two superheat utilization schemes of extraction steam in a double reheat ultra-supercritical power plant, where one scheme adopts outer steam coolers and the other employs a regenerative turbine. A comparative study of the two proposed schemes is conducted. Thermodynamic and techno-economic analyses are performed to reveal the energy saving effects of the proposed schemes. Thermodynamic analyses under partial load operation conditions are also presented. The results reveal the following. The power generation efficiency of the outer steam cooler scheme and the regenerative turbine scheme increases by 0.16 percentage points and 0.67 percentage points compared with a reference double reheat power plant, respectively. When the load is reduced, the energy saving effects of the proposed schemes become more obvious. The power generation efficiency increments of the outer steam cooler and the regenerative turbine schemes can reach 0.19 and 0.79 percentage points, respectively, at a 50{\%} turbine heat acceptance load. The net annual revenues of the two schemes are 0.29 and 1.59 million USD, respectively. The results indicate that the two proposed schemes can both effectively utilize the superheat of extraction steam for double reheat ultra-supercritical power plants. In comparison, the regenerative turbine scheme is superior to the outer steam cooler scheme in terms of thermodynamic and techno-economic performance.},
+  doi             = {10.1016/j.apenergy.2015.01.027},
+  file            = {:C$\backslash$:/Users/54933/Documents/Mendeley Desktop/Xu et al/2015 - Optimum superheat utilization of extraction steam in double reheat ultra-supercritical power plants(4).pdf:pdf;:C$\backslash$:/Users/54933/Documents/Mendeley Desktop/Xu et al/2015 - Optimum superheat utilization of extraction steam in double reheat ultra-supercritical power plants.pdf:pdf},
+  keywords        = {Double reheat,Partial load conditions,Superheat utilization,Techno-economic analyses,Thermodynamic,Thermodynamic analyses},
+  mendeley-groups = {风力机叶片,APEN},
+  publisher       = {Elsevier Ltd},
+  url             = {http://dx.doi.org/10.1016/j.apenergy.2015.01.027},
+}
+
+@Article{Bugge2014High,
+  author          = {Bugge, J{\o}rgen and Kj{\ae}r, Sven and Blum, Rudolph},
+  title           = {{High-efficiency coal-fired power plants development and perspectives}},
+  journal         = {Energy},
+  year            = {2006},
+  volume          = {31},
+  number          = {10-11},
+  pages           = {1437--1445},
+  month           = {aug},
+  issn            = {0360-5442},
+  abstract        = {The Danish power stations have a long-standing tradition of building plants with high-efficiency. Elsam's two most recent power plants commissioned in 1997 and 1998 represented a turning point in Europe for high-efficiency conventional power plants with double reheat and steam temperatures of 580°C. The operational experiences have been good and the plants are just as flexible in operation as more traditional plants. With a background in the two plants and as coordinator of the EU financed AD700 project, Elsam has been on the forefront of the development of a future coal-fired power plant with 700°C steam temperature. The project comprises about 40 companies representing all actors in the European power industry and is now in its second phase. The presentation will briefly show the historical development and present status and perspectives for the AD700 technology.},
+  doi             = {10.1016/J.ENERGY.2005.05.025},
+  file            = {:C$\backslash$:/Users/54933/Documents/Mendeley Desktop/Bugge, Kj{\ae}r, Blum/2006 - High-efficiency coal-fired power plants development and perspectives.pdf:pdf},
+  mendeley-groups = {热力系统,APEN},
+  publisher       = {Pergamon},
+  url             = {https://www.sciencedirect.com/science/article/pii/S0360544205001416},
+}
+
+@Article{Rosen2008Improving,
+  author          = {Rosen, Marc a. and Tang, Raymond},
+  title           = {{Improving Steam Power Plant Efficiency Through Exergy Analysis: Effects Of Altering Excess Combustion Air And Stack-Gas Temperature}},
+  journal         = {International Journal of Exergy},
+  year            = {2008},
+  volume          = {5},
+  number          = {1},
+  pages           = {31--51},
+  issn            = {1742-8297},
+  abstract        = {Abstract Modifications are examined to increase coal-fired steam power plant efficiency by reducing irreversibilities in the steam generator, including decreasing the fraction of excess combustion air, and/or the stack-gas temperature. Overall-plant energy and exergy efficiencies both increase by 1.4{\%} when the fraction of excess combustion air decreases from 0.4 to 0.15, and by 3.5{\%} when the stack-gas temperature decreases from 149°C to 87°C. When both decreases occur, plant energy and exergy efficiencies both increase by 4.1{\%}. If theoretical combustion air is used, the plant energy and exergy efficiencies both increase by 4.7{\%} when the stack-gas temperature is 87°C.},
+  doi             = {10.1504/IJEX.2008.016011},
+  file            = {:C$\backslash$:/Users/54933/Documents/Mendeley Desktop/Rosen, Tang/2008 - Improving Steam Power Plant Efficiency Through Exergy Analysis Effects Of Altering Excess Combustion Air And Stack-Gas Tempera(2).pdf:pdf},
+  keywords        = {2008,a,and tang,coal,combustion,efficiency,efficiency through exergy analysis,exergy,follows,improving steam power plant,m,r,reference to this paper,rosen,should be made as,stack gas,steam gen,steam generator,steam power plant},
+  mendeley-groups = {热力系统,APEN},
+  url             = {http://www.inderscience.com/link.php?id=16011},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
