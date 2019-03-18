@@ -1,32 +1,32 @@
-\nomenclatureentry{M$\dot{I}$@[{$\dot{I}$}]\begingroup exergy destruction rate (MW)\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{M$\dot{Ex}$@[{$\dot{Ex}$}]\begingroup exergy rate (MW)\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{M$\dot{W}$@[{$\dot{W}$}]\begingroup work rate or power done by the system (MW)\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{M$\eta_{\uppercase\expandafter{\romannumeral2}}$@[{$\eta_{\uppercase\expandafter{\romannumeral2}}$}]\begingroup exergy efficiency\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{M$y_{D}$@[{$y_{D}$}]\begingroup exergy destruction ratio (MW/MW)\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{M$ex$@[{$ex$}]\begingroup specific exergy (MJ/kg)\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{M$h$@[{$h$}]\begingroup specific enthalpy (MJ/kg)\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{M$s$@[{$s$}]\begingroup specific entropy (MJ/kg\,K)\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{M$T$@[{$T$}]\begingroup temperature (K)\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{M$\dot{m}$@[{$\dot{m}$}]\begingroup mass flow rate (kg/s)\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{S$in$@[{$in$}]\begingroup inlet component or system\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{S$out$@[{$out$}]\begingroup outlet component or system\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aTHA@[{THA}]\begingroup turbine heat acceptance\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aAOC@[{AOC}]\begingroup additional outer steam cooler\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aSCE@[{SCE}]\begingroup standard coal equivalent\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aUSC@[{USC}]\begingroup ultra-supercritical\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aLTE@[{LTE}]\begingroup low temperature economizer\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aLPE@[{LPE}]\begingroup low pressure economizer\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aEAPH@[{EAPH}]\begingroup turbine-extraction-heated air preheater\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aAPH@[{APH}]\begingroup air preheater\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aVHP@[{VHP}]\begingroup super high pressure cylinder\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aHP@[{HP}]\begingroup high pressure cylinder\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aIP@[{IP}]\begingroup intermediate pressure cylinder\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aLP@[{LP}]\begingroup low pressure cylinder\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aECO@[{ECO}]\begingroup  economizer\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aRH@[{RH}]\begingroup regenerative heater\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aHRH@[{HRH}]\begingroup high pressure regenerative heater\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aLRH@[{LRH}]\begingroup low pressure regenerative heater\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aDEA@[{DEA}]\begingroup deaerator\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aLMTD@[{LMTD}]\begingroup logarithm mean temperature difference\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aLHV@[{LHV}]\begingroup lower heating value of fuel\nomeqref {7}|nompageref}{26}
-\nomenclatureentry{aC, H, O, N@[{C, H, O, N}]\begingroup mass fraction of carbon, hydrogen, oxygen, nitrogen of coal\nomeqref {7}|nompageref}{26}
+\nomenclatureentry{M$\dot{I}$@[{$\dot{I}$}]\begingroup exergy destruction rate (MW)\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{M$\dot{Ex}$@[{$\dot{Ex}$}]\begingroup exergy rate (MW)\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{M$\dot{W}$@[{$\dot{W}$}]\begingroup work rate or power done by the system (MW)\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{M$\eta_{\uppercase\expandafter{\romannumeral2}}$@[{$\eta_{\uppercase\expandafter{\romannumeral2}}$}]\begingroup exergy efficiency\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{M$y_{D}$@[{$y_{D}$}]\begingroup exergy destruction ratio (MW/MW)\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{M$ex$@[{$ex$}]\begingroup specific exergy (MJ/kg)\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{M$h$@[{$h$}]\begingroup specific enthalpy (MJ/kg)\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{M$s$@[{$s$}]\begingroup specific entropy (MJ/kg\,K)\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{M$T$@[{$T$}]\begingroup temperature (K)\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{M$\dot{m}$@[{$\dot{m}$}]\begingroup mass flow rate (kg/s)\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{S$in$@[{$in$}]\begingroup inlet component or system\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{S$out$@[{$out$}]\begingroup outlet component or system\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aTHA@[{THA}]\begingroup turbine heat acceptance\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aAOC@[{AOC}]\begingroup additional outer steam cooler\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aSCE@[{SCE}]\begingroup standard coal equivalent\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aUSC@[{USC}]\begingroup ultra-supercritical\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aLTE@[{LTE}]\begingroup low temperature economizer\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aLPE@[{LPE}]\begingroup low pressure economizer\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aEAPH@[{EAPH}]\begingroup turbine-extraction-heated air preheater\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aAPH@[{APH}]\begingroup air preheater\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aVHP@[{VHP}]\begingroup super high pressure cylinder\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aHP@[{HP}]\begingroup high pressure cylinder\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aIP@[{IP}]\begingroup intermediate pressure cylinder\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aLP@[{LP}]\begingroup low pressure cylinder\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aECO@[{ECO}]\begingroup  economizer\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aRH@[{RH}]\begingroup regenerative heater\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aHRH@[{HRH}]\begingroup high pressure regenerative heater\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aLRH@[{LRH}]\begingroup low pressure regenerative heater\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aDEA@[{DEA}]\begingroup deaerator\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aLMTD@[{LMTD}]\begingroup logarithm mean temperature difference\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aLHV@[{LHV}]\begingroup lower heating value of fuel\nomeqref {7}|nompageref}{27}
+\nomenclatureentry{aC, H, O, N@[{C, H, O, N}]\begingroup mass fraction of carbon, hydrogen, oxygen, nitrogen of coal\nomeqref {7}|nompageref}{27}

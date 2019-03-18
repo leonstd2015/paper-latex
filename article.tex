@@ -69,7 +69,7 @@ In addition, thermodynamic analyses under partial load operation conditions were
 Exergy analysis was used to identify the exergy destruction changes of the transformed parts and to analyze the cause of the changes.
 The results show that the novel system largely decreased the exergy destruction rate of the air preheat process and improved the system's thermal performance.
 Furthermore, the novel system increased the temperature of secondary air and reduced the overall superheat degree of several extractions.
-Theoretically, with an overall exergy efficiency of 48.73\%, the novel system can reduce standard coal equivalent consumption by nearly 5.5\,g/kWh under the turbine heat acceptance load if the temperature of the flue gas entering the electrostatic precipitator is set to 95$^\circ$C.
+Theoretically, with an overall exergy efficiency of 48.73\%, the novel system can reduce standard coal equivalent consumption by nearly 5.5\,g/kWh under the turbine heat acceptance load.
 Moreover, the novel system has advantages for coal-saving under the partial load condition.
 Ultimately, the results indicate that the novel system can improve the performance of the double-reheat USC unit and may provide a theoretical basis for its optimization.
 
@@ -143,6 +143,25 @@ According to Ref.~\cite{Wu2014Component}, component- and process-based exergy ev
 It was pointed out that the exergy destruction in the heat transfer process accounts for the largest proportion of exergy destruction overall.
 The largest part of the exergy loss is boiler, and the exergy loss of boiler's air preheater is equivalent to that of the whole regenerative subsystem.
 Reducing the loss of air preheater is the key to improve the system's efficiency.
+
+
+In recent years, some scholars have researched the possibility of using turbine extractions to heat the air of the boiler in the system.
+
+Fan et al.~\cite{Fan2018}  optimized a 1000MW double-reheat unit system. 
+A novel cycle with nine-stage air heaters are arranged on the steam pipelines between the turbine and regenerative heater is designed, and set the low-temperature economizer at the position of the original tail flue air preheater.
+By performing thermodynamic and thermal economic analysis, cycle net efficiency is increased by 0.61~\%, and the system investment payback period has reached 15 years.
+
+Li et al.~\cite{Liu2018} utilized turbine extractions to heat air in the optimization of a 1000 MW single reheat system. 
+The Optimized system power generation efficiency achieves 48.35~\%, which is 1.27~\% points higher than that of reference unit.
+
+The research results show that the use of turbine extractions to heat the air can significantly reduce the air temperature difference between the air preheater, increase the feed water temperature and secondary air temperature, and improve system efficiency.
+
+At present, the system optimization scheme using turbine extractions heating air adopts the method of setting a  parallel low-temperature economizer at the position of the original air preheater to utilize the waste heat of the tail flue.
+In this scheme, the introduction of a high-pressure condensate pump increases the complexity of the system, which greatly increases the initial investment and maintenance costs, and also increases the system power consumption and reduces the system economy.
+
+It is necessary to optimize the feedwater heating system using waste heat from the tail flue without the additional high-pressure condensate pump.
+
+
 
 In this paper, the temperature match of air, turbine extractions, boiler economizer outlet flue gas and feedwater was fist proposed based on the existing research of boiler flue gas heating feedwater, which could reduce the exergy loss of boiler and much more effective for the double reheat thermal system.
 A novel system based on a 1000\,MW double-reheat USC reference system is proposed to realize boiler and regenerative system energy cascade utilization. 
@@ -295,7 +314,7 @@ For example, the second extraction has the highest temperature and is applied to
 Because of the removal of the APH originally installed in the vertical shaft, the flue gas's heat needs to be absorbed by other means.
 As shown in Fig.~\ref{fig:novel_system}, the flue gas at the outlet of the economizer is utilized by four LTEs to heat the condensate and feedwater; these LTEs are correspond with HRH2, HRH4, LRH6, and LRH8, respectively. 
 Part of the condensate and feedwater at the inlet of the regenerative heater is sent to the LTE; then the heated water joins with the corresponding regenerative heater's outlet water. 
-Given the acid dew point temperature, the flue gas temperature at the outlet of the last LTE can be set to 95$^\circ$C. 
+Given the acid dew point temperature, the flue gas temperature at the outlet of the last LTE can be set to 117$^\circ$C. 
 
 \section{Model description and thermodynamic metrics}
 \label{ssub:model_establishment_and_system_analysis_method}
@@ -342,6 +361,7 @@ The following assumptions need to be made in order to be able to correctly perfo
 \item The thermal efficiency of the equipment is calculated from the thermal balance of the input and output parameters of the components, assuming that the calculation error requirement is met.
 \item According to the heat map, the upper and lower end differences of the heat exchanger are set as fixed values and do not change during different load conditions' simulation.
 \item The pips' complexity and the installation difficulty of the novel system's equipment is not taken into consideration.
+\item Both of the reference and novel system's boiler exhaust gas temperature is set to be 117$^\circ$C.
 \end{enumerate}
 A more detailed description of the thermodynamic model of the components can be found in Ref.~\cite{Yao2017Multi}. 
 \begin{table}
